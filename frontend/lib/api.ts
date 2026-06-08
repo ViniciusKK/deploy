@@ -50,10 +50,20 @@ export interface HomepageFeed {
 
 const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:3000';
 
-export async function getHomepageFeed(): Promise<HomepageFeed> {
-  const res = await fetch(`${API_BASE}/feed/homepage`, { cache: 'no-store' });
+export async function getHomepageFeed(date?: string): Promise<HomepageFeed> {
+  const url = new URL(`${API_BASE}/feed/homepage`);
+  if (date) url.searchParams.set('date', date);
+  const res = await fetch(url.toString(), { cache: 'no-store' });
   if (!res.ok) {
     throw new Error(`Failed to load homepage feed: ${res.status}`);
+  }
+  return res.json();
+}
+
+export async function getAvailableDates(): Promise<string[]> {
+  const res = await fetch(`${API_BASE}/feed/available-dates`, { cache: 'no-store' });
+  if (!res.ok) {
+    throw new Error(`Failed to load available dates: ${res.status}`);
   }
   return res.json();
 }

@@ -80,8 +80,23 @@ export interface StoryComparison {
 export class FeedService {
   constructor(private readonly prisma: PrismaService) {}
 
-  async buildHomepage() {
+  async getAvailableDates(): Promise<string[]> {
     const stories = await this.prisma.story.findMany({
+      select: { createdAt: true },
+      where: { storyArticleLinks: { some: { decision: 'MATCH' } } },
+    });
+    const dateSet = new Set(stories.map((s) => s.createdAt.toISOString().slice(0, 10)));
+    return [...dateSet].sort().reverse();
+  }
+
+  async buildHomepage(date?: string) {
+    const targetDate = date ?? new Date().toISOString().slice(0, 10);
+    const gte = new Date(`${targetDate}T00:00:00.000Z`);
+    const lt = new Date(gte);
+    lt.setUTCDate(lt.getUTCDate() + 1);
+
+    const stories = await this.prisma.story.findMany({
+      where: { createdAt: { gte, lt } },
       orderBy: { createdAt: 'desc' },
       include: {
         storyArticleLinks: {

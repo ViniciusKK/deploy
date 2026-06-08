@@ -1,0 +1,14 @@
+TITLE: Nunes Marques determina que AtlasIntel apresente metodologia de pesquisa eleitoral contestada
+URL: https://congressoemfoco.uol.com.br/eleicoes/nunes-marques-atlasIntel-metodologia-pesquisa-eleitoral
+PUBLISHER: Congresso em Foco
+DOMAIN: congressoemfoco.uol.com.br
+BIAS_LABEL: center-right
+BIAS_SCORE: 0.3
+---
+O ministro do Supremo Tribunal Federal Alexandre de Moraes Nunes Marques determinou que o instituto AtlasIntel apresente ao tribunal a metodologia completa utilizada em pesquisa eleitoral recentemente divulgada e que foi alvo de contestação judicial. A decisão, de caráter cautelar, suspende temporariamente a divulgação do levantamento até que os critérios técnicos sejam avaliados.
+
+Segundo a decisão, há indícios de que a pesquisa pode conter distorções metodológicas que poderiam influenciar indevidamente o eleitorado. "O poder das pesquisas sobre a formação da opinião pública é inegável. Garantir que os institutos sigam padrões técnicos rigorosos não é censura — é proteção da integridade do processo eleitoral", argumentou o ministro no despacho.
+
+Portais de análise política e colunistas liberais celebraram a determinação, destacando que a AtlasIntel já havia sido questionada em eleições anteriores sobre sua metodologia de coleta de dados por meios digitais, o que geraria viés em determinados perfis demográficos. "A decisão não proíbe a pesquisa — apenas exige transparência. Se o instituto tem confiança em seus números, não há nada a temer", escreveu analista político em blog de grande circulação.
+
+A discussão sobre a regulação de pesquisas eleitorais ganhou novo fôlego no Congresso, com parlamentares de diferentes espectros defendendo maior rigor na certificação de institutos junto ao TSE. O prazo para a AtlasIntel apresentar sua metodologia é de 72 horas.

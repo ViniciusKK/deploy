@@ -1,13 +1,23 @@
-import { getHomepageFeed } from '@/lib/api';
+import { getAvailableDates, getHomepageFeed } from '@/lib/api';
 import { BreakingBanner, Nav } from '@/components/nav';
 import { Hero } from '@/components/hero';
 import { ComparisonSection } from '@/components/comparison';
 import { DispatchesSection } from '@/components/dispatches';
 import { BlindspotSection } from '@/components/blindspot';
 import { Footer } from '@/components/footer';
+import { DateNav } from '@/components/date-nav';
 
-export default async function HomePage() {
-  const feed = await getHomepageFeed().catch(() => null);
+export default async function HomePage({
+  searchParams,
+}: {
+  searchParams: { date?: string };
+}) {
+  const selectedDate = searchParams.date ?? new Date().toISOString().slice(0, 10);
+
+  const [feed, availableDates] = await Promise.all([
+    getHomepageFeed(selectedDate).catch(() => null),
+    getAvailableDates().catch(() => [] as string[]),
+  ]);
 
   if (!feed) {
     return (
@@ -44,6 +54,7 @@ export default async function HomePage() {
           O que está sendo dito hoje
         </h1>
       </section>
+      <DateNav availableDates={availableDates} selectedDate={selectedDate} />
       {feed.hero ? <Hero story={feed.hero} /> : null}
       <div className="flex flex-col gap-16 py-12">
         <ComparisonSection stories={feed.comparison} />
