@@ -25,6 +25,7 @@ import { WorkerModule } from './worker/worker.module';
         connection: {
           host: configService.get<string>('app.redisHost', 'localhost'),
           port: configService.get<number>('app.redisPort', 6379),
+          password: configService.get<string>('app.redisPassword'),
         },
       }),
     }),
