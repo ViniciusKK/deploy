@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent: #C8102E;
+  --accent-foreground: #FFFFFF;
+  --background: #FFFFFF;
+  --foreground: #0A0A0A;
+  --primary: #0A0A0A;
+  --primary-foreground: #FFFFFF;
+  --inverse: #0A0A0A;
+  --inverse-foreground: #FFFFFF;
+  --muted-foreground: #6B6B6B;
+  --subtle-foreground: #A0A0A0;
+  --card-muted: #F5F5F4;
+  --border: #E5E5E5;
+  --breaking: #C8102E;
+
+  --bias-left: #1B6EC2;
+  --bias-lean-left: #5A9BE0;
+  --bias-center: #7C7C7C;
+  --bias-lean-right: #E89B8B;
+  --bias-right: #C8102E;
+
+  --fact-high: #2E7D32;
+  --fact-mixed: #C77700;
+  --fact-low: #C8102E;
+
+  --cat-politica: #C8102E;
+  --cat-economia: #1B5E20;
+  --cat-mundo: #00695C;
+  --cat-tecnologia: #1565C0;
+  --cat-clima: #283593;
+  --cat-cultura: #6A1B9A;
+}
+
+html,
+body {
+  background: var(--background);
+  color: var(--foreground);
+}
+
+body {
+  font-family: var(--font-sans), Inter, system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}

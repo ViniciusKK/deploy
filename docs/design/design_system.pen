@@ -1,0 +1,4712 @@
+{
+  "version": "2.11",
+  "children": [
+    {
+      "type": "frame",
+      "id": "NQfsL",
+      "x": 0,
+      "y": 0,
+      "name": "News Portal Design System",
+      "width": 2400,
+      "fill": "$--background",
+      "layout": "vertical",
+      "gap": 64,
+      "padding": 64,
+      "children": [
+        {
+          "type": "frame",
+          "id": "Cxp3h",
+          "name": "DS Header",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "text",
+              "id": "C8s7tR",
+              "name": "eyebrow",
+              "fill": "$--muted-foreground",
+              "content": "NEWS PORTAL — DESIGN SYSTEM v1.0",
+              "fontFamily": "$--font-mono",
+              "fontSize": 12,
+              "fontWeight": "500",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "W5hQg9",
+              "name": "title",
+              "fill": "$--foreground",
+              "content": "The Editorial Foundation",
+              "fontFamily": "$--font-primary",
+              "fontSize": 72,
+              "fontWeight": "700",
+              "letterSpacing": -1.5
+            },
+            {
+              "type": "text",
+              "id": "Pz2Df",
+              "name": "sub",
+              "fill": "$--muted-foreground",
+              "textGrowth": "fixed-width",
+              "width": 900,
+              "content": "A comprehensive design language for modern, digital-only journalism — typography, color, components and layout patterns engineered for clarity, speed and editorial gravitas.",
+              "lineHeight": 1.5,
+              "fontFamily": "$--font-secondary",
+              "fontSize": 18
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "ff33E",
+          "name": "divider",
+          "fill": "$--foreground",
+          "width": "fill_container",
+          "height": 1
+        },
+        {
+          "type": "frame",
+          "id": "bsJYY",
+          "name": "01 — Foundation",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "cn4r5",
+              "name": "tokensHead",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "phSzK",
+                  "name": "tokensEy",
+                  "fill": "$--accent",
+                  "content": "01 — FOUNDATION",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "v0HtjX",
+                  "name": "tokensTitle",
+                  "fill": "$--foreground",
+                  "content": "Color & Typography",
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 40,
+                  "fontWeight": "700",
+                  "letterSpacing": -0.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "itJAI",
+              "name": "colorRow",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "KgSxh",
+                  "name": "colorLbl",
+                  "fill": "$--muted-foreground",
+                  "content": "SURFACE & TEXT",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "swQw7",
+                  "name": "surfGrid",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "O02D41",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "s1",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--background",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1,
+                            "fill": "$--border"
+                          }
+                        },
+                        "xLRsK": {
+                          "content": "Background"
+                        },
+                        "WcggG": {
+                          "content": "#FFFFFF"
+                        }
+                      }
+                    },
+                    {
+                      "id": "iReNl",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "s2",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--foreground"
+                        },
+                        "xLRsK": {
+                          "content": "Foreground"
+                        },
+                        "WcggG": {
+                          "content": "#0A0A0A"
+                        }
+                      }
+                    },
+                    {
+                      "id": "nb4U0",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "s3",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--muted-foreground"
+                        },
+                        "xLRsK": {
+                          "content": "Muted Text"
+                        },
+                        "WcggG": {
+                          "content": "#6B6B6B"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ZTabS",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "s4",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--subtle-foreground"
+                        },
+                        "xLRsK": {
+                          "content": "Subtle Text"
+                        },
+                        "WcggG": {
+                          "content": "#A0A0A0"
+                        }
+                      }
+                    },
+                    {
+                      "id": "GCi85",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "s5",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--card-muted"
+                        },
+                        "xLRsK": {
+                          "content": "Card Muted"
+                        },
+                        "WcggG": {
+                          "content": "#F5F5F4"
+                        }
+                      }
+                    },
+                    {
+                      "id": "EbWAU",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "s6",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--border"
+                        },
+                        "xLRsK": {
+                          "content": "Border"
+                        },
+                        "WcggG": {
+                          "content": "#E5E5E5"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "g9ZUq",
+                  "name": "brandLbl",
+                  "fill": "$--muted-foreground",
+                  "content": "BRAND & SEMANTIC",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "qNYp8",
+                  "name": "brandGrid",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "L2Imgo",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "b1",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--accent"
+                        },
+                        "xLRsK": {
+                          "content": "Accent / Brand"
+                        },
+                        "WcggG": {
+                          "content": "#C8102E"
+                        }
+                      }
+                    },
+                    {
+                      "id": "qp9Ls",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "b2",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--breaking"
+                        },
+                        "xLRsK": {
+                          "content": "Breaking"
+                        },
+                        "WcggG": {
+                          "content": "#C8102E"
+                        }
+                      }
+                    },
+                    {
+                      "id": "sOqQy",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "b3",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--live"
+                        },
+                        "xLRsK": {
+                          "content": "Live"
+                        },
+                        "WcggG": {
+                          "content": "#E03A3A"
+                        }
+                      }
+                    },
+                    {
+                      "id": "y7RyFV",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "b4",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--success"
+                        },
+                        "xLRsK": {
+                          "content": "Success"
+                        },
+                        "WcggG": {
+                          "content": "#2E7D32"
+                        }
+                      }
+                    },
+                    {
+                      "id": "I6oScz",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "b5",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--warning"
+                        },
+                        "xLRsK": {
+                          "content": "Warning"
+                        },
+                        "WcggG": {
+                          "content": "#C77700"
+                        }
+                      }
+                    },
+                    {
+                      "id": "OWkYe",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "b6",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--info"
+                        },
+                        "xLRsK": {
+                          "content": "Info"
+                        },
+                        "WcggG": {
+                          "content": "#1B6EC2"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "ojtQf",
+                  "name": "catLbl",
+                  "fill": "$--muted-foreground",
+                  "content": "NEWS CATEGORIES",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "v3vHb",
+                  "name": "catGrid",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "VPg4Q",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "c1",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--cat-politics"
+                        },
+                        "xLRsK": {
+                          "content": "Politics"
+                        },
+                        "WcggG": {
+                          "content": "#C8102E"
+                        }
+                      }
+                    },
+                    {
+                      "id": "V7XN1Y",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "c2",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--cat-business"
+                        },
+                        "xLRsK": {
+                          "content": "Business"
+                        },
+                        "WcggG": {
+                          "content": "#1B5E20"
+                        }
+                      }
+                    },
+                    {
+                      "id": "E4khvl",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "c3",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--cat-tech"
+                        },
+                        "xLRsK": {
+                          "content": "Technology"
+                        },
+                        "WcggG": {
+                          "content": "#1565C0"
+                        }
+                      }
+                    },
+                    {
+                      "id": "zfal1",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "c4",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--cat-culture"
+                        },
+                        "xLRsK": {
+                          "content": "Culture"
+                        },
+                        "WcggG": {
+                          "content": "#6A1B9A"
+                        }
+                      }
+                    },
+                    {
+                      "id": "S3fIOW",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "c5",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--cat-sports"
+                        },
+                        "xLRsK": {
+                          "content": "Sports"
+                        },
+                        "WcggG": {
+                          "content": "#E65100"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ntOfQ",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "c6",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--cat-opinion"
+                        },
+                        "xLRsK": {
+                          "content": "Opinion"
+                        },
+                        "WcggG": {
+                          "content": "#5D4037"
+                        }
+                      }
+                    },
+                    {
+                      "id": "B27y95",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "c7",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--cat-world"
+                        },
+                        "xLRsK": {
+                          "content": "World"
+                        },
+                        "WcggG": {
+                          "content": "#00695C"
+                        }
+                      }
+                    },
+                    {
+                      "id": "ZGtef",
+                      "type": "ref",
+                      "ref": "cyA4A",
+                      "width": "fill_container",
+                      "name": "c8",
+                      "descendants": {
+                        "ryfGC": {
+                          "fill": "$--cat-science"
+                        },
+                        "xLRsK": {
+                          "content": "Science"
+                        },
+                        "WcggG": {
+                          "content": "#283593"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "FkkmS",
+              "name": "Typography Scale",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": [
+                32,
+                0,
+                0,
+                0
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "mUjDc",
+                  "name": "typoLbl",
+                  "fill": "$--muted-foreground",
+                  "content": "TYPOGRAPHY",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "aBeJe",
+                  "name": "typoGrid",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "d9VbZL",
+                      "name": "typoLeft",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "H9ZR6O",
+                          "name": "disp",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "ND6mn",
+                              "name": "dispLbl",
+                              "fill": "$--subtle-foreground",
+                              "content": "DISPLAY / 96 / Playfair 700",
+                              "fontFamily": "$--font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "KNdRE",
+                              "name": "dispText",
+                              "fill": "$--foreground",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Stories that move the world.",
+                              "lineHeight": 1.05,
+                              "fontFamily": "$--font-primary",
+                              "fontSize": 96,
+                              "fontWeight": "700",
+                              "letterSpacing": -2
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "IM57O",
+                          "name": "h1",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "nvx6p",
+                              "name": "h1Lbl",
+                              "fill": "$--subtle-foreground",
+                              "content": "H1 / 56 / Playfair 700",
+                              "fontFamily": "$--font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "iHehN",
+                              "name": "h1Text",
+                              "fill": "$--foreground",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "The Senate's quiet vote that could redraw the map",
+                              "lineHeight": 1.1,
+                              "fontFamily": "$--font-primary",
+                              "fontSize": 56,
+                              "fontWeight": "700",
+                              "letterSpacing": -1
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "PjD5D",
+                          "name": "h2",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "dZ5nw",
+                              "name": "h2Lbl",
+                              "fill": "$--subtle-foreground",
+                              "content": "H2 / 36 / Playfair 600",
+                              "fontFamily": "$--font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "Dp2iY",
+                              "name": "h2Text",
+                              "fill": "$--foreground",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Markets recalibrate after surprise rate cut",
+                              "lineHeight": 1.15,
+                              "fontFamily": "$--font-primary",
+                              "fontSize": 36,
+                              "fontWeight": "600",
+                              "letterSpacing": -0.5
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "qrsk6",
+                          "name": "h3",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "SVUP2",
+                              "name": "h3Lbl",
+                              "fill": "$--subtle-foreground",
+                              "content": "H3 / 24 / Playfair 600",
+                              "fontFamily": "$--font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "G3kve",
+                              "name": "h3Text",
+                              "fill": "$--foreground",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Reporters notebook: Inside the courtroom",
+                              "lineHeight": 1.25,
+                              "fontFamily": "$--font-primary",
+                              "fontSize": 24,
+                              "fontWeight": "600"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "i02VJf",
+                      "name": "typoRight",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 24,
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "rrm9U",
+                          "name": "lead",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "n6eKU2",
+                              "name": "leadLbl",
+                              "fill": "$--subtle-foreground",
+                              "content": "LEAD / 22 / Inter 400",
+                              "fontFamily": "$--font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "I4xhlL",
+                              "name": "leadText",
+                              "fill": "$--foreground",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "A standing crowd, an unfinished speech, and three minutes that changed the trajectory of a campaign that had seemed unmovable for months.",
+                              "lineHeight": 1.4,
+                              "fontFamily": "$--font-secondary",
+                              "fontSize": 22
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "wDKZ4",
+                          "name": "body",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "jSG7a",
+                              "name": "bodyLbl",
+                              "fill": "$--subtle-foreground",
+                              "content": "BODY / 17 / Inter 400 / Reading optimised",
+                              "fontFamily": "$--font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "GYnhP",
+                              "name": "bodyText",
+                              "fill": "$--foreground",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "In the months leading up to the vote, observers cast doubt on the scale of public support for the proposed legislation. Internal polling — quietly circulated among senior staff — told a different story altogether. The numbers, several aides confirmed, had been quietly trending in one direction for weeks.",
+                              "lineHeight": 1.6,
+                              "fontFamily": "$--font-secondary",
+                              "fontSize": 17
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "B2NplV",
+                          "name": "small",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "xdYuX",
+                              "name": "smallLbl",
+                              "fill": "$--subtle-foreground",
+                              "content": "CAPTION / 13 / Inter 500",
+                              "fontFamily": "$--font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "AK3au",
+                              "name": "smallText",
+                              "fill": "$--muted-foreground",
+                              "textGrowth": "fixed-width",
+                              "width": "fill_container",
+                              "content": "Photograph: Maya Okafor / Espectro — Senators leaving chamber, 4:42 a.m.",
+                              "lineHeight": 1.4,
+                              "fontFamily": "$--font-secondary",
+                              "fontSize": 13,
+                              "fontWeight": "500"
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "Vbm1Y",
+                          "name": "mono",
+                          "width": "fill_container",
+                          "layout": "vertical",
+                          "gap": 4,
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "d1i2N",
+                              "name": "monoLbl",
+                              "fill": "$--subtle-foreground",
+                              "content": "MONO / 12 / IBM Plex Mono — metadata",
+                              "fontFamily": "$--font-mono",
+                              "fontSize": 10,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1.5
+                            },
+                            {
+                              "type": "text",
+                              "id": "heRIq",
+                              "name": "monoText",
+                              "fill": "$--foreground",
+                              "content": "PUBLISHED 04.28.26 · 06:12 EDT · UPDATED 06:48 EDT · 7 MIN READ",
+                              "fontFamily": "$--font-mono",
+                              "fontSize": 12,
+                              "fontWeight": "normal",
+                              "letterSpacing": 1
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "F8QZXX",
+          "name": "02 — Buttons",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "sTElX",
+              "name": "btnHead",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "m6pqx",
+                  "name": "btnEy",
+                  "fill": "$--accent",
+                  "content": "02 — INTERACTIVE",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "v6lkH1",
+                  "name": "btnTitle",
+                  "fill": "$--foreground",
+                  "content": "Buttons & Actions",
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 40,
+                  "fontWeight": "700",
+                  "letterSpacing": -0.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "k4VtHA",
+              "name": "btnRow",
+              "width": "fill_container",
+              "fill": "$--card-muted",
+              "gap": 24,
+              "padding": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "n9YiO",
+                  "type": "ref",
+                  "ref": "OHxuY",
+                  "name": "b_p",
+                  "descendants": {
+                    "fIcfN": {
+                      "enabled": true
+                    }
+                  }
+                },
+                {
+                  "id": "H01jm",
+                  "type": "ref",
+                  "ref": "g5NqFs",
+                  "name": "b_s",
+                  "descendants": {
+                    "lrsG9": {
+                      "enabled": true
+                    }
+                  }
+                },
+                {
+                  "id": "XY2vZ",
+                  "type": "ref",
+                  "ref": "u3W3mo",
+                  "name": "b_g"
+                },
+                {
+                  "id": "J4U64l",
+                  "type": "ref",
+                  "ref": "ybC3t",
+                  "name": "b_d"
+                },
+                {
+                  "id": "S17Muw",
+                  "type": "ref",
+                  "ref": "S8RjD",
+                  "name": "b_i"
+                },
+                {
+                  "id": "d6q3B",
+                  "type": "ref",
+                  "ref": "S8RjD",
+                  "name": "b_i2",
+                  "descendants": {
+                    "iF430": {
+                      "iconFontName": "bookmark"
+                    }
+                  }
+                },
+                {
+                  "id": "W4cMiT",
+                  "type": "ref",
+                  "ref": "S8RjD",
+                  "name": "b_i3",
+                  "descendants": {
+                    "iF430": {
+                      "iconFontName": "share"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "UtR8n",
+          "name": "03 — Tags & Badges",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "MoeQv",
+              "name": "tagHead",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "z0wjoZ",
+                  "name": "tagEy",
+                  "fill": "$--accent",
+                  "content": "03 — TAXONOMY",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "OgvLb",
+                  "name": "tagTitle",
+                  "fill": "$--foreground",
+                  "content": "Tags & Badges",
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 40,
+                  "fontWeight": "700",
+                  "letterSpacing": -0.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "TqQ0S",
+              "name": "catRow",
+              "width": "fill_container",
+              "fill": "$--card-muted",
+              "layout": "vertical",
+              "gap": 24,
+              "padding": 32,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "zd0Ac",
+                  "name": "catSubLbl",
+                  "fill": "$--muted-foreground",
+                  "content": "CATEGORY TAGS — used in article cards & section heads",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "frame",
+                  "id": "Fed1p",
+                  "name": "catTagRow",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "bC1MA",
+                      "type": "ref",
+                      "ref": "phfAz",
+                      "name": "ct1",
+                      "descendants": {
+                        "OaQju": {
+                          "fill": "$--cat-politics"
+                        },
+                        "GFGib": {
+                          "content": "POLITICS"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Ru1pE",
+                      "type": "ref",
+                      "ref": "phfAz",
+                      "name": "ct2",
+                      "descendants": {
+                        "OaQju": {
+                          "fill": "$--cat-business"
+                        },
+                        "GFGib": {
+                          "content": "BUSINESS"
+                        }
+                      }
+                    },
+                    {
+                      "id": "YEsOU",
+                      "type": "ref",
+                      "ref": "phfAz",
+                      "name": "ct3",
+                      "descendants": {
+                        "OaQju": {
+                          "fill": "$--cat-tech"
+                        },
+                        "GFGib": {
+                          "content": "TECHNOLOGY"
+                        }
+                      }
+                    },
+                    {
+                      "id": "HJTdx",
+                      "type": "ref",
+                      "ref": "phfAz",
+                      "name": "ct4",
+                      "descendants": {
+                        "OaQju": {
+                          "fill": "$--cat-culture"
+                        },
+                        "GFGib": {
+                          "content": "CULTURE"
+                        }
+                      }
+                    },
+                    {
+                      "id": "MGp2u",
+                      "type": "ref",
+                      "ref": "phfAz",
+                      "name": "ct5",
+                      "descendants": {
+                        "OaQju": {
+                          "fill": "$--cat-sports"
+                        },
+                        "GFGib": {
+                          "content": "SPORTS"
+                        }
+                      }
+                    },
+                    {
+                      "id": "Y5GGw6",
+                      "type": "ref",
+                      "ref": "phfAz",
+                      "name": "ct6",
+                      "descendants": {
+                        "OaQju": {
+                          "fill": "$--cat-opinion"
+                        },
+                        "GFGib": {
+                          "content": "OPINION"
+                        }
+                      }
+                    },
+                    {
+                      "id": "FaeXR",
+                      "type": "ref",
+                      "ref": "phfAz",
+                      "name": "ct7",
+                      "descendants": {
+                        "OaQju": {
+                          "fill": "$--cat-world"
+                        },
+                        "GFGib": {
+                          "content": "WORLD"
+                        }
+                      }
+                    },
+                    {
+                      "id": "FTTWP",
+                      "type": "ref",
+                      "ref": "phfAz",
+                      "name": "ct8",
+                      "descendants": {
+                        "OaQju": {
+                          "fill": "$--cat-science"
+                        },
+                        "GFGib": {
+                          "content": "SCIENCE"
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "ubdIK",
+                  "name": "badgeSubLbl",
+                  "fill": "$--muted-foreground",
+                  "content": "STATUS BADGES & TOPIC TAGS",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1.5
+                },
+                {
+                  "type": "frame",
+                  "id": "JzISH",
+                  "name": "badgeRow",
+                  "width": "fill_container",
+                  "gap": 16,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "J9IkV6",
+                      "type": "ref",
+                      "ref": "vLGzQ",
+                      "name": "br1"
+                    },
+                    {
+                      "id": "MlKwu",
+                      "type": "ref",
+                      "ref": "i5P1oV",
+                      "name": "br2"
+                    },
+                    {
+                      "id": "F4Uo8",
+                      "type": "ref",
+                      "ref": "n98tSl",
+                      "name": "br3"
+                    },
+                    {
+                      "id": "WBRBU",
+                      "type": "ref",
+                      "ref": "V7IkEU",
+                      "name": "br4",
+                      "descendants": {
+                        "wLraj": {
+                          "content": "#climate"
+                        }
+                      }
+                    },
+                    {
+                      "id": "aEJah",
+                      "type": "ref",
+                      "ref": "V7IkEU",
+                      "name": "br5",
+                      "descendants": {
+                        "wLraj": {
+                          "content": "#election2026"
+                        }
+                      }
+                    },
+                    {
+                      "id": "dQIT6",
+                      "type": "ref",
+                      "ref": "V7IkEU",
+                      "name": "br6",
+                      "descendants": {
+                        "wLraj": {
+                          "content": "#AI"
+                        }
+                      }
+                    },
+                    {
+                      "id": "WCl1Y",
+                      "type": "ref",
+                      "ref": "V7IkEU",
+                      "name": "br7",
+                      "descendants": {
+                        "wLraj": {
+                          "content": "#supreme-court"
+                        }
+                      }
+                    },
+                    {
+                      "id": "i7RJYF",
+                      "type": "ref",
+                      "ref": "V7IkEU",
+                      "name": "br8",
+                      "descendants": {
+                        "wLraj": {
+                          "content": "#markets"
+                        }
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "kG8FW",
+          "name": "04 — Inputs",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "Q64Rd2",
+              "name": "inputHead",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "YIFVh",
+                  "name": "inputEy",
+                  "fill": "$--accent",
+                  "content": "04 — FORMS",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "fyTf2",
+                  "name": "inputTitle",
+                  "fill": "$--foreground",
+                  "content": "Inputs & Search",
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 40,
+                  "fontWeight": "700",
+                  "letterSpacing": -0.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Sg0o0",
+              "name": "inputRow",
+              "width": "fill_container",
+              "fill": "$--card-muted",
+              "layout": "vertical",
+              "gap": 20,
+              "padding": 32,
+              "children": [
+                {
+                  "id": "mylZt",
+                  "type": "ref",
+                  "ref": "wOSxX",
+                  "name": "ir1"
+                },
+                {
+                  "id": "vMkYx",
+                  "type": "ref",
+                  "ref": "FZIwx",
+                  "name": "ir2"
+                },
+                {
+                  "id": "R8PNC7",
+                  "type": "ref",
+                  "ref": "mFluS",
+                  "width": 480,
+                  "name": "ir3"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rKSDe",
+          "name": "05 — Article Cards",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "eByHn",
+              "name": "cardHead",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "HhpOO",
+                  "name": "cardEy",
+                  "fill": "$--accent",
+                  "content": "05 — STORY UNITS",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "MuZsa",
+                  "name": "cardTitle",
+                  "fill": "$--foreground",
+                  "content": "Article Cards",
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 40,
+                  "fontWeight": "700",
+                  "letterSpacing": -0.5
+                },
+                {
+                  "type": "text",
+                  "id": "rjtiP",
+                  "name": "cardDesc",
+                  "fill": "$--muted-foreground",
+                  "textGrowth": "fixed-width",
+                  "width": 800,
+                  "content": "Five tiers of story unit, from full-bleed hero to single-line wire feed — composed to give every story the visual weight it deserves.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$--font-secondary",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "rj1oA",
+              "name": "stdCardLbl",
+              "fill": "$--muted-foreground",
+              "content": "CARD / STANDARD — used in section grids",
+              "fontFamily": "$--font-mono",
+              "fontSize": 11,
+              "fontWeight": "normal",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "frame",
+              "id": "bFtKb",
+              "name": "stdRow",
+              "width": "fill_container",
+              "fill": "$--card-muted",
+              "gap": 32,
+              "padding": 32,
+              "children": [
+                {
+                  "id": "fXhUN",
+                  "type": "ref",
+                  "ref": "ludYt",
+                  "width": "fill_container",
+                  "name": "sc1"
+                },
+                {
+                  "id": "r0HHUf",
+                  "type": "ref",
+                  "ref": "ludYt",
+                  "width": "fill_container",
+                  "name": "sc2",
+                  "descendants": {
+                    "F5W8F": {
+                      "fill": "$--cat-tech"
+                    },
+                    "fBFEM": {
+                      "content": "TECHNOLOGY"
+                    },
+                    "M0nv8": {
+                      "content": "The chip war's quietest battlefield is now a Dutch lithography plant"
+                    },
+                    "PLk81": {
+                      "content": "Inside the geopolitics of a single 180-tonne machine that nobody else knows how to build."
+                    },
+                    "t66PaH/TBFiu": {
+                      "content": "By Alex Ruiz"
+                    },
+                    "t66PaH/J5hS4": {
+                      "content": "9 MIN READ · TECHNOLOGY"
+                    }
+                  }
+                },
+                {
+                  "id": "JUxs1",
+                  "type": "ref",
+                  "ref": "ludYt",
+                  "width": "fill_container",
+                  "name": "sc3",
+                  "descendants": {
+                    "F5W8F": {
+                      "fill": "$--cat-culture"
+                    },
+                    "fBFEM": {
+                      "content": "CULTURE"
+                    },
+                    "M0nv8": {
+                      "content": "The Met's spring season opens with a quiet reckoning"
+                    },
+                    "PLk81": {
+                      "content": "A long-anticipated retrospective re-examines the museum's collecting practices over four decades."
+                    },
+                    "t66PaH/TBFiu": {
+                      "content": "By June Hwang"
+                    },
+                    "t66PaH/J5hS4": {
+                      "content": "5 MIN READ · CULTURE"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "MVxaZ",
+              "name": "heroLbl",
+              "fill": "$--muted-foreground",
+              "content": "CARD / HERO — top-of-page lead story",
+              "fontFamily": "$--font-mono",
+              "fontSize": 11,
+              "fontWeight": "normal",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "frame",
+              "id": "vig3Y",
+              "name": "heroWrap",
+              "width": "fill_container",
+              "fill": "$--card-muted",
+              "layout": "vertical",
+              "padding": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "gMEvK",
+                  "type": "ref",
+                  "ref": "QXCHR",
+                  "name": "hero"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "E2bxR",
+              "name": "listLbl",
+              "fill": "$--muted-foreground",
+              "content": "CARD / LIST — section feed & search results",
+              "fontFamily": "$--font-mono",
+              "fontSize": 11,
+              "fontWeight": "normal",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "frame",
+              "id": "D6inOF",
+              "name": "listWrap",
+              "width": "fill_container",
+              "fill": "$--card-muted",
+              "layout": "vertical",
+              "gap": 32,
+              "padding": 32,
+              "children": [
+                {
+                  "id": "fTfBi",
+                  "type": "ref",
+                  "ref": "mkApx",
+                  "name": "l1"
+                },
+                {
+                  "id": "O939PG",
+                  "type": "ref",
+                  "ref": "mkApx",
+                  "name": "l2",
+                  "descendants": {
+                    "A5lQEf/OaQju": {
+                      "fill": "$--cat-world"
+                    },
+                    "A5lQEf/GFGib": {
+                      "content": "WORLD"
+                    },
+                    "W04p0Y": {
+                      "content": "4 HOURS AGO"
+                    },
+                    "l7l9p": {
+                      "content": "Coastal cities draft a coordinated response after second flood event in 18 months"
+                    },
+                    "YM6BC": {
+                      "content": "Mayors from twelve cities released a joint blueprint focused on shared funding and infrastructure standards."
+                    }
+                  }
+                },
+                {
+                  "id": "s1bJt",
+                  "type": "ref",
+                  "ref": "mkApx",
+                  "name": "l3",
+                  "descendants": {
+                    "A5lQEf/OaQju": {
+                      "fill": "$--cat-science"
+                    },
+                    "A5lQEf/GFGib": {
+                      "content": "SCIENCE"
+                    },
+                    "W04p0Y": {
+                      "content": "6 HOURS AGO"
+                    },
+                    "l7l9p": {
+                      "content": "Quantum entanglement experiment closes the last major loophole, physicists say"
+                    },
+                    "YM6BC": {
+                      "content": "The result, replicated independently across three labs, ends a decades-long debate."
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "O5TtD",
+              "name": "compactLbl",
+              "fill": "$--muted-foreground",
+              "content": "CARD / COMPACT — sidebar & related stories",
+              "fontFamily": "$--font-mono",
+              "fontSize": 11,
+              "fontWeight": "normal",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "frame",
+              "id": "J1bTQj",
+              "name": "compRow",
+              "width": "fill_container",
+              "fill": "$--card-muted",
+              "gap": 32,
+              "padding": 32,
+              "children": [
+                {
+                  "id": "Hr7Zc",
+                  "type": "ref",
+                  "ref": "fqSvB",
+                  "name": "cp1"
+                },
+                {
+                  "id": "p95vs",
+                  "type": "ref",
+                  "ref": "fqSvB",
+                  "name": "cp2",
+                  "descendants": {
+                    "L8t5Pt/OaQju": {
+                      "fill": "$--cat-opinion"
+                    },
+                    "L8t5Pt/GFGib": {
+                      "content": "OPINION"
+                    },
+                    "M249F": {
+                      "content": "Why the next decade of journalism will be defined by what we choose not to publish"
+                    },
+                    "wrkUA": {
+                      "content": "BY EDITORIAL BOARD · 1 HR AGO"
+                    }
+                  }
+                },
+                {
+                  "id": "Q0NZS",
+                  "type": "ref",
+                  "ref": "fqSvB",
+                  "name": "cp3",
+                  "descendants": {
+                    "L8t5Pt/OaQju": {
+                      "fill": "$--cat-sports"
+                    },
+                    "L8t5Pt/GFGib": {
+                      "content": "SPORTS"
+                    },
+                    "M249F": {
+                      "content": "A 39-year-old captain is rewriting what late-career form looks like"
+                    },
+                    "wrkUA": {
+                      "content": "BY DANI MARTÍN · 30 MIN AGO"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bQ1Us",
+          "name": "06 — Navigation",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 32,
+          "children": [
+            {
+              "type": "frame",
+              "id": "mcPzQ",
+              "name": "navHead",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OQQv5",
+                  "name": "navEy",
+                  "fill": "$--accent",
+                  "content": "06 — STRUCTURE",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "R891gW",
+                  "name": "navTitle",
+                  "fill": "$--foreground",
+                  "content": "Navigation & Chrome",
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 40,
+                  "fontWeight": "700",
+                  "letterSpacing": -0.5
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "W8QHH",
+              "name": "navWrap",
+              "width": "fill_container",
+              "fill": "$--card-muted",
+              "layout": "vertical",
+              "padding": 32,
+              "children": [
+                {
+                  "id": "O7gxbg",
+                  "type": "ref",
+                  "ref": "coR55",
+                  "width": "fill_container",
+                  "name": "navTop"
+                },
+                {
+                  "id": "Ld7dR",
+                  "type": "ref",
+                  "ref": "Lt055",
+                  "width": "fill_container",
+                  "name": "navSection"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "oFTUt",
+              "name": "footerLbl",
+              "fill": "$--muted-foreground",
+              "content": "FOOTER — site-wide",
+              "fontFamily": "$--font-mono",
+              "fontSize": 11,
+              "fontWeight": "normal",
+              "letterSpacing": 1.5
+            },
+            {
+              "type": "frame",
+              "id": "L29xYg",
+              "name": "footerWrap",
+              "width": "fill_container",
+              "fill": "$--card-muted",
+              "layout": "vertical",
+              "padding": 32,
+              "children": [
+                {
+                  "id": "Ge7W6",
+                  "type": "ref",
+                  "ref": "LmlB1",
+                  "width": "fill_container",
+                  "name": "footerInst"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "kOFOP",
+      "x": 2600,
+      "y": 0,
+      "name": "Reusable Components",
+      "width": 1200,
+      "fill": "$--background",
+      "layout": "vertical",
+      "gap": 48,
+      "padding": 32,
+      "children": [
+        {
+          "type": "text",
+          "id": "nalOT",
+          "name": "cmpTitle",
+          "fill": "$--foreground",
+          "content": "Reusable Components",
+          "fontFamily": "$--font-primary",
+          "fontSize": 32,
+          "fontWeight": "700"
+        },
+        {
+          "type": "frame",
+          "id": "cyA4A",
+          "name": "ColorSwatch",
+          "reusable": true,
+          "width": 200,
+          "fill": "$--background",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "$--border"
+          },
+          "layout": "vertical",
+          "children": [
+            {
+              "type": "rectangle",
+              "id": "ryfGC",
+              "name": "swatchColor",
+              "fill": "$--foreground",
+              "width": "fill_container",
+              "height": 120
+            },
+            {
+              "type": "frame",
+              "id": "ikyE2",
+              "name": "swatchInfo",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 4,
+              "padding": [
+                12,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xLRsK",
+                  "name": "swatchName",
+                  "fill": "$--foreground",
+                  "content": "Foreground",
+                  "fontFamily": "$--font-secondary",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "WcggG",
+                  "name": "swatchHex",
+                  "fill": "$--muted-foreground",
+                  "content": "#0A0A0A",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "OHxuY",
+          "name": "Button/Primary",
+          "reusable": true,
+          "fill": "$--primary",
+          "cornerRadius": "$--radius-pill",
+          "gap": 8,
+          "padding": [
+            12,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "fIcfN",
+              "x": 0,
+              "y": 0,
+              "name": "icon",
+              "enabled": false,
+              "width": 16,
+              "height": 16,
+              "iconFontName": "arrow-right",
+              "iconFontFamily": "lucide",
+              "fill": "$--primary-foreground"
+            },
+            {
+              "type": "text",
+              "id": "su1K5",
+              "name": "label",
+              "fill": "$--primary-foreground",
+              "content": "Read full story",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 14,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "g5NqFs",
+          "name": "Button/Secondary",
+          "reusable": true,
+          "fill": "$--background",
+          "cornerRadius": "$--radius-pill",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1.5,
+            "fill": "$--foreground"
+          },
+          "gap": 8,
+          "padding": [
+            12,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "lrsG9",
+              "x": 0,
+              "y": 0,
+              "name": "icon",
+              "enabled": false,
+              "width": 16,
+              "height": 16,
+              "iconFontName": "bookmark",
+              "iconFontFamily": "lucide",
+              "fill": "$--foreground"
+            },
+            {
+              "type": "text",
+              "id": "Gkh0h",
+              "name": "label",
+              "fill": "$--foreground",
+              "content": "Save for later",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 14,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "u3W3mo",
+          "name": "Button/Ghost",
+          "reusable": true,
+          "gap": 6,
+          "padding": [
+            10,
+            12
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "JRygB",
+              "name": "icon",
+              "width": 16,
+              "height": 16,
+              "iconFontName": "share",
+              "iconFontFamily": "lucide",
+              "fill": "$--foreground"
+            },
+            {
+              "type": "text",
+              "id": "Cnq3A",
+              "name": "label",
+              "fill": "$--foreground",
+              "content": "Share",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ybC3t",
+          "name": "Button/Destructive",
+          "reusable": true,
+          "fill": "$--accent",
+          "cornerRadius": "$--radius-pill",
+          "gap": 8,
+          "padding": [
+            12,
+            20
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "tWKzb",
+              "name": "icon",
+              "width": 16,
+              "height": 16,
+              "iconFontName": "triangle-alert",
+              "iconFontFamily": "lucide",
+              "fill": "$--accent-foreground"
+            },
+            {
+              "type": "text",
+              "id": "HQAK5",
+              "name": "label",
+              "fill": "$--accent-foreground",
+              "content": "Report issue",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 14,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "S8RjD",
+          "name": "Button/Icon",
+          "reusable": true,
+          "width": 40,
+          "height": 40,
+          "fill": "$--card-muted",
+          "cornerRadius": "$--radius-pill",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "iF430",
+              "name": "icon",
+              "width": 18,
+              "height": 18,
+              "iconFontName": "search",
+              "iconFontFamily": "lucide",
+              "fill": "$--foreground"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "phfAz",
+          "name": "Tag/Category",
+          "reusable": true,
+          "gap": 6,
+          "padding": [
+            4,
+            10
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "OaQju",
+              "name": "dot",
+              "fill": "$--cat-politics",
+              "width": 6,
+              "height": 6
+            },
+            {
+              "type": "text",
+              "id": "GFGib",
+              "name": "label",
+              "fill": "$--foreground",
+              "content": "POLITICS",
+              "fontFamily": "$--font-mono",
+              "fontSize": 11,
+              "fontWeight": "600",
+              "letterSpacing": 1.5
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "vLGzQ",
+          "name": "Badge/Breaking",
+          "reusable": true,
+          "fill": "$--breaking",
+          "gap": 6,
+          "padding": [
+            4,
+            10
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "ZffGA",
+              "name": "label",
+              "fill": "$--inverse-foreground",
+              "content": "BREAKING",
+              "fontFamily": "$--font-mono",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 1.5
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "i5P1oV",
+          "name": "Badge/Live",
+          "reusable": true,
+          "fill": "$--background",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "$--live"
+          },
+          "gap": 6,
+          "padding": [
+            4,
+            10
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "Wwm9r",
+              "name": "dot",
+              "fill": "$--live",
+              "width": 8,
+              "height": 8
+            },
+            {
+              "type": "text",
+              "id": "K25lw7",
+              "name": "label",
+              "fill": "$--live",
+              "content": "LIVE",
+              "fontFamily": "$--font-mono",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 1.5
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "n98tSl",
+          "name": "Badge/Premium",
+          "reusable": true,
+          "fill": "$--foreground",
+          "gap": 6,
+          "padding": [
+            4,
+            10
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "eWTdk",
+              "name": "bpStar",
+              "width": 12,
+              "height": 12,
+              "iconFontName": "crown",
+              "iconFontFamily": "lucide",
+              "fill": "$--inverse-foreground"
+            },
+            {
+              "type": "text",
+              "id": "TfKe9",
+              "name": "bpLab",
+              "fill": "$--inverse-foreground",
+              "content": "PREMIUM",
+              "fontFamily": "$--font-mono",
+              "fontSize": 11,
+              "fontWeight": "700",
+              "letterSpacing": 1.5
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "V7IkEU",
+          "name": "Tag/Topic",
+          "reusable": true,
+          "fill": "$--card-muted",
+          "cornerRadius": "$--radius-pill",
+          "padding": [
+            6,
+            12
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "wLraj",
+              "name": "label",
+              "fill": "$--foreground",
+              "content": "#climate",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 13,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mFluS",
+          "name": "Input/Text",
+          "reusable": true,
+          "width": 320,
+          "fill": "$--background",
+          "cornerRadius": "$--radius-md",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1,
+            "fill": "$--border"
+          },
+          "gap": 8,
+          "padding": [
+            14,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "rx3HD",
+              "x": 0,
+              "y": 0,
+              "name": "icon",
+              "enabled": false,
+              "width": 18,
+              "height": 18,
+              "iconFontName": "mail",
+              "iconFontFamily": "lucide",
+              "fill": "$--muted-foreground"
+            },
+            {
+              "type": "text",
+              "id": "H9E3it",
+              "name": "label",
+              "fill": "$--muted-foreground",
+              "content": "your@email.com",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 15
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "wOSxX",
+          "name": "Input/Search",
+          "reusable": true,
+          "width": 480,
+          "fill": "$--card-muted",
+          "cornerRadius": "$--radius-pill",
+          "gap": 10,
+          "padding": [
+            12,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "avnUT",
+              "name": "isIcon",
+              "width": 18,
+              "height": 18,
+              "iconFontName": "search",
+              "iconFontFamily": "lucide",
+              "fill": "$--muted-foreground"
+            },
+            {
+              "type": "text",
+              "id": "eGKf7",
+              "name": "label",
+              "fill": "$--muted-foreground",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Search reporters, topics or stories",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 15
+            },
+            {
+              "type": "frame",
+              "id": "SiQOw",
+              "name": "isShortcut",
+              "fill": "$--background",
+              "cornerRadius": "$--radius-sm",
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$--border"
+              },
+              "padding": [
+                2,
+                8
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dhTHh",
+                  "name": "isShortKey",
+                  "fill": "$--muted-foreground",
+                  "content": "⌘ K",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "FZIwx",
+          "name": "Input/Newsletter",
+          "reusable": true,
+          "width": 480,
+          "fill": "$--background",
+          "cornerRadius": "$--radius-pill",
+          "stroke": {
+            "align": "inside",
+            "thickness": 1.5,
+            "fill": "$--foreground"
+          },
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "nTwpG",
+              "name": "inField",
+              "width": "fill_container",
+              "padding": [
+                14,
+                20
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "kOyAC",
+                  "name": "label",
+                  "fill": "$--muted-foreground",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Sign up with your email",
+                  "fontFamily": "$--font-secondary",
+                  "fontSize": 15
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "I1EoHs",
+              "name": "inBtn",
+              "fill": "$--foreground",
+              "cornerRadius": "$--radius-pill",
+              "padding": [
+                12,
+                20
+              ],
+              "justifyContent": "center",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "sh7r4",
+                  "name": "inBtnLbl",
+                  "fill": "$--inverse-foreground",
+                  "content": "Subscribe →",
+                  "fontFamily": "$--font-secondary",
+                  "fontSize": 14,
+                  "fontWeight": "600"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "W6ZEjB",
+          "name": "Byline",
+          "reusable": true,
+          "gap": 10,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "ellipse",
+              "id": "INrz6",
+              "name": "avatar",
+              "fill": "$--card-muted",
+              "width": 32,
+              "height": 32,
+              "stroke": {
+                "align": "inside",
+                "thickness": 1,
+                "fill": "$--border"
+              }
+            },
+            {
+              "type": "frame",
+              "id": "wwtNs",
+              "name": "authText",
+              "layout": "vertical",
+              "gap": 2,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "TBFiu",
+                  "name": "name",
+                  "fill": "$--foreground",
+                  "content": "By Maya Okafor",
+                  "fontFamily": "$--font-secondary",
+                  "fontSize": 13,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "J5hS4",
+                  "name": "meta",
+                  "fill": "$--muted-foreground",
+                  "content": "7 MIN READ · POLITICS",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 10,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ludYt",
+          "name": "Card/Standard",
+          "reusable": true,
+          "width": 360,
+          "fill": "$--background",
+          "layout": "vertical",
+          "gap": 16,
+          "children": [
+            {
+              "type": "frame",
+              "id": "h1WtKY",
+              "name": "image",
+              "width": "fill_container",
+              "height": 240,
+              "fill": "$--card-muted",
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "LBfoU",
+                  "layoutPosition": "absolute",
+                  "x": 16,
+                  "y": 16,
+                  "name": "csImgTag",
+                  "fill": "$--background",
+                  "padding": [
+                    6,
+                    12
+                  ],
+                  "children": [
+                    {
+                      "type": "ellipse",
+                      "id": "F5W8F",
+                      "name": "csTagDot",
+                      "fill": "$--cat-politics",
+                      "width": 6,
+                      "height": 6
+                    },
+                    {
+                      "type": "text",
+                      "id": "fBFEM",
+                      "name": "csTagLbl",
+                      "fill": "$--foreground",
+                      "content": "POLITICS",
+                      "fontFamily": "$--font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 1.5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "AL27M",
+              "name": "csBody",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 12,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "M0nv8",
+                  "name": "title",
+                  "fill": "$--foreground",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "How a single late-night vote redrew the boundaries of public ownership",
+                  "lineHeight": 1.2,
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 24,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.3
+                },
+                {
+                  "type": "text",
+                  "id": "PLk81",
+                  "name": "desc",
+                  "fill": "$--muted-foreground",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Inside the procedural maneuver that quietly cleared the way for one of the largest infrastructure transfers in a decade.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$--font-secondary",
+                  "fontSize": 14
+                },
+                {
+                  "id": "t66PaH",
+                  "type": "ref",
+                  "ref": "W6ZEjB",
+                  "name": "csByline"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "QXCHR",
+          "name": "Card/Hero",
+          "reusable": true,
+          "width": 1100,
+          "fill": "$--background",
+          "layout": "vertical",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "SXjas",
+              "name": "image",
+              "clip": true,
+              "width": "fill_container",
+              "height": 480,
+              "fill": "$--inverse",
+              "children": [
+                {
+                  "id": "vZJ3O",
+                  "type": "ref",
+                  "ref": "vLGzQ",
+                  "x": 24,
+                  "y": 24,
+                  "layoutPosition": "absolute",
+                  "name": "chBadge"
+                },
+                {
+                  "type": "text",
+                  "id": "kI7w4",
+                  "layoutPosition": "absolute",
+                  "x": 24,
+                  "y": 432,
+                  "name": "caption",
+                  "opacity": 0.8,
+                  "fill": "$--inverse-foreground",
+                  "content": "Photograph: Wire / Espectro",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "boSF6",
+              "name": "chBody",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tlUG5",
+                  "name": "chBodyLeft",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "id": "ltmFJ",
+                      "type": "ref",
+                      "ref": "phfAz",
+                      "name": "chTag",
+                      "descendants": {
+                        "OaQju": {
+                          "fill": "$--cat-politics"
+                        },
+                        "GFGib": {
+                          "content": "POLITICS — INVESTIGATION"
+                        }
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "aZIje",
+                      "name": "title",
+                      "fill": "$--foreground",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "After three years of silence, the network behind the leaks finally has a face",
+                      "lineHeight": 1.05,
+                      "fontFamily": "$--font-primary",
+                      "fontSize": 56,
+                      "fontWeight": "700",
+                      "letterSpacing": -1.2
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IXeJC",
+                  "name": "chBodyRight",
+                  "width": 380,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "fr1qI",
+                      "name": "lead",
+                      "fill": "$--foreground",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Six months of court filings, intercepted communications and confidential source interviews reveal a coordinated campaign that operated for years across three continents — and the unlikely whistle-blower who finally exposed it.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 18
+                    },
+                    {
+                      "type": "frame",
+                      "id": "VepbZ",
+                      "name": "chMeta",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "id": "yoaoe",
+                          "type": "ref",
+                          "ref": "W6ZEjB",
+                          "name": "chByline",
+                          "descendants": {
+                            "J5hS4": {
+                              "content": "PUBLISHED 04.28.26 · 12 MIN READ"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "mkApx",
+          "name": "Card/List",
+          "reusable": true,
+          "width": 680,
+          "fill": "$--background",
+          "gap": 24,
+          "children": [
+            {
+              "type": "frame",
+              "id": "syK44",
+              "name": "image",
+              "width": 200,
+              "height": 140,
+              "fill": "$--card-muted"
+            },
+            {
+              "type": "frame",
+              "id": "hVpJU",
+              "name": "clBody",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 8,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "yPlC9",
+                  "name": "clMetaRow",
+                  "width": "fill_container",
+                  "gap": 12,
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "id": "A5lQEf",
+                      "type": "ref",
+                      "ref": "phfAz",
+                      "name": "clTag",
+                      "descendants": {
+                        "OaQju": {
+                          "fill": "$--cat-business"
+                        },
+                        "GFGib": {
+                          "content": "BUSINESS"
+                        }
+                      }
+                    },
+                    {
+                      "type": "text",
+                      "id": "W04p0Y",
+                      "name": "date",
+                      "fill": "$--muted-foreground",
+                      "content": "2 HOURS AGO",
+                      "fontFamily": "$--font-mono",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "text",
+                  "id": "l7l9p",
+                  "name": "title",
+                  "fill": "$--foreground",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Markets recalibrate as central bank signals first cut in 18 months",
+                  "lineHeight": 1.2,
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 22,
+                  "fontWeight": "600",
+                  "letterSpacing": -0.3
+                },
+                {
+                  "type": "text",
+                  "id": "YM6BC",
+                  "name": "desc",
+                  "fill": "$--muted-foreground",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container",
+                  "content": "Bond yields fell sharply on the announcement, while equity traders moved to position for a sustained easing cycle.",
+                  "lineHeight": 1.5,
+                  "fontFamily": "$--font-secondary",
+                  "fontSize": 14
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fqSvB",
+          "name": "Card/Compact",
+          "reusable": true,
+          "width": 300,
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "top": 1
+            },
+            "fill": "$--foreground"
+          },
+          "layout": "vertical",
+          "gap": 8,
+          "padding": [
+            20,
+            0
+          ],
+          "children": [
+            {
+              "id": "L8t5Pt",
+              "type": "ref",
+              "ref": "phfAz",
+              "name": "ccTag",
+              "descendants": {
+                "OaQju": {
+                  "fill": "$--cat-tech"
+                },
+                "GFGib": {
+                  "content": "TECHNOLOGY"
+                }
+              }
+            },
+            {
+              "type": "text",
+              "id": "M249F",
+              "name": "title",
+              "fill": "$--foreground",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Open-source AI lab announces a new training framework — and a board exodus",
+              "lineHeight": 1.25,
+              "fontFamily": "$--font-primary",
+              "fontSize": 18,
+              "fontWeight": "600",
+              "letterSpacing": -0.2
+            },
+            {
+              "type": "text",
+              "id": "wrkUA",
+              "name": "meta",
+              "fill": "$--muted-foreground",
+              "content": "BY ALEX RUIZ · 4 HRS AGO",
+              "fontFamily": "$--font-mono",
+              "fontSize": 10,
+              "fontWeight": "normal",
+              "letterSpacing": 1.2
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "coR55",
+          "name": "Nav/Top",
+          "reusable": true,
+          "width": 1400,
+          "fill": "$--background",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$--foreground"
+          },
+          "padding": [
+            20,
+            40
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "enw6p",
+              "name": "tnLeft",
+              "gap": 32,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "JoST6",
+                  "name": "tnMenu",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "menu",
+                  "iconFontFamily": "lucide",
+                  "fill": "$--foreground"
+                },
+                {
+                  "type": "text",
+                  "id": "xAWTW",
+                  "name": "logo",
+                  "fill": "$--foreground",
+                  "content": "Espectro",
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 32,
+                  "fontWeight": "700",
+                  "letterSpacing": -1
+                },
+                {
+                  "type": "frame",
+                  "id": "c5LCC",
+                  "name": "tnDate",
+                  "layout": "vertical",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "k9B2tN",
+                      "name": "tnD1",
+                      "fill": "$--muted-foreground",
+                      "content": "TUESDAY · APRIL 28, 2026",
+                      "fontFamily": "$--font-mono",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "Bxe9w",
+                      "name": "tnD2",
+                      "fill": "$--muted-foreground",
+                      "content": "VOL. XII · NO. 118",
+                      "fontFamily": "$--font-mono",
+                      "fontSize": 10,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1.5
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "gdwvz",
+              "name": "tnRight",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "eRlLE",
+                  "type": "ref",
+                  "ref": "S8RjD",
+                  "name": "tnSearch",
+                  "descendants": {
+                    "iF430": {
+                      "iconFontName": "search"
+                    }
+                  }
+                },
+                {
+                  "id": "La0kr",
+                  "type": "ref",
+                  "ref": "S8RjD",
+                  "name": "tnAccount",
+                  "descendants": {
+                    "iF430": {
+                      "iconFontName": "user"
+                    }
+                  }
+                },
+                {
+                  "id": "cno47",
+                  "type": "ref",
+                  "ref": "OHxuY",
+                  "name": "tnSubBtn",
+                  "descendants": {
+                    "su1K5": {
+                      "content": "Subscribe"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Lt055",
+          "name": "Nav/Section",
+          "reusable": true,
+          "width": 1400,
+          "fill": "$--background",
+          "stroke": {
+            "align": "inside",
+            "thickness": {
+              "bottom": 1
+            },
+            "fill": "$--border"
+          },
+          "gap": 32,
+          "padding": [
+            16,
+            40
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "fBVbL",
+              "name": "snItem1",
+              "fill": "$--foreground",
+              "content": "Politics",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 14,
+              "fontWeight": "600"
+            },
+            {
+              "type": "text",
+              "id": "gEhSF",
+              "name": "snItem2",
+              "fill": "$--muted-foreground",
+              "content": "World",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "MdvZm",
+              "name": "snItem3",
+              "fill": "$--muted-foreground",
+              "content": "Business",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "qcN0F",
+              "name": "snItem4",
+              "fill": "$--muted-foreground",
+              "content": "Technology",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "MVgzl",
+              "name": "snItem5",
+              "fill": "$--muted-foreground",
+              "content": "Science",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "JRffA",
+              "name": "snItem6",
+              "fill": "$--muted-foreground",
+              "content": "Culture",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "XyFLi",
+              "name": "snItem7",
+              "fill": "$--muted-foreground",
+              "content": "Sports",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "xQ8wX",
+              "name": "snItem8",
+              "fill": "$--muted-foreground",
+              "content": "Opinion",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "J8iri",
+              "name": "snItem9",
+              "fill": "$--muted-foreground",
+              "content": "Magazine",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 14,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "LmlB1",
+          "name": "Footer",
+          "reusable": true,
+          "width": 1400,
+          "fill": "$--inverse",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": [
+            64,
+            40
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "Uey1u",
+              "name": "fTop",
+              "width": "fill_container",
+              "gap": 64,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "uo51a",
+                  "name": "fLogo",
+                  "width": 360,
+                  "layout": "vertical",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "AD5fu",
+                      "name": "fLogoT",
+                      "fill": "$--inverse-foreground",
+                      "content": "Espectro",
+                      "fontFamily": "$--font-primary",
+                      "fontSize": 48,
+                      "fontWeight": "700",
+                      "letterSpacing": -1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "JbCVw",
+                      "name": "fLogoSub",
+                      "opacity": 0.7,
+                      "fill": "$--inverse-foreground",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Independent journalism, built for the digital reader. Investigations, analysis and reporting from a global newsroom.",
+                      "lineHeight": 1.6,
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "s26gP",
+                      "name": "fSocial",
+                      "gap": 12,
+                      "padding": [
+                        16,
+                        0,
+                        0,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "type": "icon_font",
+                          "id": "cqDoM",
+                          "name": "fS1",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "twitter",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--inverse-foreground"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "i8eXB",
+                          "name": "fS2",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "instagram",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--inverse-foreground"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "mlHcy",
+                          "name": "fS3",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "youtube",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--inverse-foreground"
+                        },
+                        {
+                          "type": "icon_font",
+                          "id": "h9qSlJ",
+                          "name": "fS4",
+                          "width": 20,
+                          "height": 20,
+                          "iconFontName": "rss",
+                          "iconFontFamily": "lucide",
+                          "fill": "$--inverse-foreground"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hcvqK",
+                  "name": "fCol1",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "pUOCx",
+                      "name": "fc1h",
+                      "opacity": 0.6,
+                      "fill": "$--inverse-foreground",
+                      "content": "NEWS",
+                      "fontFamily": "$--font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "ajunS",
+                      "name": "fc1a",
+                      "fill": "$--inverse-foreground",
+                      "content": "Politics",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zGTV6",
+                      "name": "fc1b",
+                      "fill": "$--inverse-foreground",
+                      "content": "World",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uk02T",
+                      "name": "fc1c",
+                      "fill": "$--inverse-foreground",
+                      "content": "Business",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "TNNJY",
+                      "name": "fc1d",
+                      "fill": "$--inverse-foreground",
+                      "content": "Technology",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "T9vHtu",
+                      "name": "fc1e",
+                      "fill": "$--inverse-foreground",
+                      "content": "Science",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "cYy5I",
+                  "name": "fCol2",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "w1RLrZ",
+                      "name": "fc2h",
+                      "opacity": 0.6,
+                      "fill": "$--inverse-foreground",
+                      "content": "COMPANY",
+                      "fontFamily": "$--font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "X2TVE9",
+                      "name": "fc2a",
+                      "fill": "$--inverse-foreground",
+                      "content": "About",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "j7VKB",
+                      "name": "fc2b",
+                      "fill": "$--inverse-foreground",
+                      "content": "Newsroom",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "JvXrX",
+                      "name": "fc2c",
+                      "fill": "$--inverse-foreground",
+                      "content": "Careers",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "OpHp9",
+                      "name": "fc2d",
+                      "fill": "$--inverse-foreground",
+                      "content": "Press",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "uWbxx",
+                      "name": "fc2e",
+                      "fill": "$--inverse-foreground",
+                      "content": "Contact",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hCh3L",
+                  "name": "fCol3",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 14,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "wg1yI",
+                      "name": "fc3h",
+                      "opacity": 0.6,
+                      "fill": "$--inverse-foreground",
+                      "content": "PRODUCTS",
+                      "fontFamily": "$--font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "ko46c",
+                      "name": "fc3a",
+                      "fill": "$--inverse-foreground",
+                      "content": "Subscriptions",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "k0u6z",
+                      "name": "fc3b",
+                      "fill": "$--inverse-foreground",
+                      "content": "Newsletters",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "zfv4U",
+                      "name": "fc3c",
+                      "fill": "$--inverse-foreground",
+                      "content": "Podcasts",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "usfQK",
+                      "name": "fc3d",
+                      "fill": "$--inverse-foreground",
+                      "content": "Mobile app",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "o2JRkU",
+                      "name": "fc3e",
+                      "fill": "$--inverse-foreground",
+                      "content": "RSS feeds",
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "F8V5z",
+              "name": "fBottom",
+              "width": "fill_container",
+              "stroke": {
+                "align": "inside",
+                "thickness": {
+                  "top": 1
+                },
+                "fill": "$--inverse-foreground"
+              },
+              "padding": [
+                24,
+                0,
+                0,
+                0
+              ],
+              "justifyContent": "space_between",
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "xNM9k",
+                  "name": "fBL",
+                  "opacity": 0.6,
+                  "fill": "$--inverse-foreground",
+                  "content": "© 2026 Espectro Media · All rights reserved",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "normal",
+                  "letterSpacing": 1
+                },
+                {
+                  "type": "frame",
+                  "id": "uRZkl",
+                  "name": "fBR",
+                  "gap": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "bZbym",
+                      "name": "fbr1",
+                      "opacity": 0.6,
+                      "fill": "$--inverse-foreground",
+                      "content": "Privacy",
+                      "fontFamily": "$--font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "ilTzI",
+                      "name": "fbr2",
+                      "opacity": 0.6,
+                      "fill": "$--inverse-foreground",
+                      "content": "Terms",
+                      "fontFamily": "$--font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "EIyC5",
+                      "name": "fbr3",
+                      "opacity": 0.6,
+                      "fill": "$--inverse-foreground",
+                      "content": "Cookies",
+                      "fontFamily": "$--font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    },
+                    {
+                      "type": "text",
+                      "id": "GFOeu",
+                      "name": "fbr4",
+                      "opacity": 0.6,
+                      "fill": "$--inverse-foreground",
+                      "content": "Sitemap",
+                      "fontFamily": "$--font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "BxG7a",
+      "x": 0,
+      "y": 6628,
+      "name": "Sample — Homepage",
+      "width": 1400,
+      "fill": "$--background",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "NQOe7",
+          "type": "ref",
+          "ref": "coR55",
+          "width": "fill_container",
+          "name": "hpNav"
+        },
+        {
+          "id": "BNQi9",
+          "type": "ref",
+          "ref": "Lt055",
+          "width": "fill_container",
+          "name": "hpSection"
+        },
+        {
+          "type": "frame",
+          "id": "oC70s",
+          "name": "hpBreaking",
+          "width": "fill_container",
+          "fill": "$--breaking",
+          "gap": 16,
+          "padding": [
+            12,
+            40
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "B2kuV",
+              "name": "hpBrkLbl",
+              "fill": "$--inverse-foreground",
+              "gap": 6,
+              "padding": [
+                2,
+                8
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "c6BDNL",
+                  "name": "hpBrkLblText",
+                  "fill": "$--breaking",
+                  "content": "BREAKING",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "700",
+                  "letterSpacing": 1.5
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "F56d85",
+              "name": "hpBrkText",
+              "fill": "$--inverse-foreground",
+              "textGrowth": "fixed-width",
+              "width": "fill_container",
+              "content": "Senate passes infrastructure bill 51–47 along party lines after marathon overnight session",
+              "fontFamily": "$--font-secondary",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "text",
+              "id": "M6RJqQ",
+              "name": "hpBrkTime",
+              "opacity": 0.85,
+              "fill": "$--inverse-foreground",
+              "content": "04:42 EDT",
+              "fontFamily": "$--font-mono",
+              "fontSize": 11,
+              "fontWeight": "normal",
+              "letterSpacing": 1.5
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "HMJm4",
+          "name": "Main",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 48,
+          "padding": 40,
+          "children": [
+            {
+              "type": "frame",
+              "id": "N8IPDn",
+              "name": "hpHero",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "j6JC4",
+                  "name": "hpHeroLeft",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "DMeuZ",
+                      "name": "hpHeroImg",
+                      "clip": true,
+                      "width": "fill_container",
+                      "height": 520,
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "./images/generated-1777419890825.png",
+                        "mode": "fill"
+                      },
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "YSAxs",
+                          "layoutPosition": "absolute",
+                          "x": 24,
+                          "y": 24,
+                          "name": "hpHeroOver",
+                          "fill": "$--accent",
+                          "gap": 6,
+                          "padding": [
+                            6,
+                            12
+                          ],
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "ellipse",
+                              "id": "y2aoG",
+                              "name": "hpHeroOverDot",
+                              "fill": "$--inverse-foreground",
+                              "width": 6,
+                              "height": 6
+                            },
+                            {
+                              "type": "text",
+                              "id": "OrNSH",
+                              "name": "hpHeroOverLbl",
+                              "fill": "$--inverse-foreground",
+                              "content": "INVESTIGATION · POLITICS",
+                              "fontFamily": "$--font-mono",
+                              "fontSize": 11,
+                              "fontWeight": "700",
+                              "letterSpacing": 1.5
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "LXvvK",
+                      "name": "hpHeroCap",
+                      "fill": "$--muted-foreground",
+                      "content": "Photograph: Maya Okafor / Espectro — outside the Capitol, 4:42 a.m.",
+                      "fontFamily": "$--font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "normal",
+                      "letterSpacing": 1
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "B2e8F",
+                  "name": "hpHeroRight",
+                  "width": 520,
+                  "layout": "vertical",
+                  "gap": 20,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "t95q8B",
+                      "name": "hpHeroEy",
+                      "fill": "$--accent",
+                      "content": "THE LEAD STORY",
+                      "fontFamily": "$--font-mono",
+                      "fontSize": 11,
+                      "fontWeight": "600",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "text",
+                      "id": "FfGs9",
+                      "name": "hpHeroTitle",
+                      "fill": "$--foreground",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "After three years of silence, the network behind the leaks finally has a face",
+                      "lineHeight": 1.05,
+                      "fontFamily": "$--font-primary",
+                      "fontSize": 64,
+                      "fontWeight": "700",
+                      "letterSpacing": -1.5
+                    },
+                    {
+                      "type": "text",
+                      "id": "TM0jZ",
+                      "name": "hpHeroLead",
+                      "fill": "$--foreground",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Six months of court filings, intercepted communications, and confidential interviews reveal a coordinated campaign that operated for years — and the unlikely whistle-blower who finally exposed it.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "$--font-secondary",
+                      "fontSize": 18
+                    },
+                    {
+                      "id": "KFE7R",
+                      "type": "ref",
+                      "ref": "W6ZEjB",
+                      "name": "hpHeroByline",
+                      "descendants": {
+                        "J5hS4": {
+                          "content": "PUBLISHED 04.28.26 · UPDATED 06:48 · 12 MIN READ"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "uZj2m",
+                      "name": "hpHeroBtns",
+                      "gap": 12,
+                      "padding": [
+                        12,
+                        0,
+                        0,
+                        0
+                      ],
+                      "children": [
+                        {
+                          "id": "s8evw",
+                          "type": "ref",
+                          "ref": "OHxuY",
+                          "name": "hpHbR",
+                          "descendants": {
+                            "fIcfN": {
+                              "enabled": true,
+                              "iconFontName": "arrow-right"
+                            },
+                            "su1K5": {
+                              "content": "Read full investigation"
+                            }
+                          }
+                        },
+                        {
+                          "id": "Ra24Y",
+                          "type": "ref",
+                          "ref": "u3W3mo",
+                          "name": "hpHbS",
+                          "descendants": {
+                            "JRygB": {
+                              "iconFontName": "headphones"
+                            },
+                            "Cnq3A": {
+                              "content": "Listen · 18 min"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "XDSG5",
+              "name": "hpDivider",
+              "fill": "$--foreground",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "yj2Zk",
+              "name": "hpFeatHead",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "j1cFM",
+                  "name": "hpFeatTitle",
+                  "fill": "$--foreground",
+                  "content": "Top Stories",
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 32,
+                  "fontWeight": "700",
+                  "letterSpacing": -0.5
+                },
+                {
+                  "type": "text",
+                  "id": "dvwKM",
+                  "name": "hpFeatMore",
+                  "fill": "$--foreground",
+                  "content": "VIEW ALL →",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "XXATP",
+              "name": "hpFeatGrid",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "id": "w7c6H",
+                  "type": "ref",
+                  "ref": "ludYt",
+                  "width": "fill_container",
+                  "name": "hf1",
+                  "descendants": {
+                    "F5W8F": {
+                      "fill": "$--cat-business"
+                    },
+                    "fBFEM": {
+                      "content": "BUSINESS"
+                    },
+                    "M0nv8": {
+                      "content": "Markets recalibrate as central bank signals first cut in 18 months"
+                    },
+                    "PLk81": {
+                      "content": "Bond yields fell sharply on the announcement, while equity traders moved to position for a sustained easing cycle."
+                    },
+                    "t66PaH/TBFiu": {
+                      "content": "By Priya Shah"
+                    },
+                    "t66PaH/J5hS4": {
+                      "content": "6 MIN READ · BUSINESS"
+                    }
+                  }
+                },
+                {
+                  "id": "MD17C",
+                  "type": "ref",
+                  "ref": "ludYt",
+                  "width": "fill_container",
+                  "name": "hf2",
+                  "descendants": {
+                    "F5W8F": {
+                      "fill": "$--cat-tech"
+                    },
+                    "fBFEM": {
+                      "content": "TECHNOLOGY"
+                    },
+                    "M0nv8": {
+                      "content": "The chip war's quietest battlefield is now a Dutch lithography plant"
+                    },
+                    "PLk81": {
+                      "content": "Inside the geopolitics of a single 180-tonne machine that nobody else knows how to build."
+                    },
+                    "t66PaH/TBFiu": {
+                      "content": "By Alex Ruiz"
+                    },
+                    "t66PaH/J5hS4": {
+                      "content": "9 MIN READ · TECHNOLOGY"
+                    }
+                  }
+                },
+                {
+                  "id": "cUK0R",
+                  "type": "ref",
+                  "ref": "ludYt",
+                  "width": "fill_container",
+                  "name": "hf3",
+                  "descendants": {
+                    "F5W8F": {
+                      "fill": "$--cat-world"
+                    },
+                    "fBFEM": {
+                      "content": "WORLD"
+                    },
+                    "M0nv8": {
+                      "content": "Coastal mayors draft a coordinated response after a second flood event in 18 months"
+                    },
+                    "PLk81": {
+                      "content": "Twelve cities released a joint blueprint focused on shared funding and infrastructure standards."
+                    },
+                    "t66PaH/TBFiu": {
+                      "content": "By Léa Bordeaux"
+                    },
+                    "t66PaH/J5hS4": {
+                      "content": "4 MIN READ · WORLD"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "RBEYz",
+              "name": "hpDiv2",
+              "fill": "$--foreground",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "dz0SN",
+              "name": "hpTwoCol",
+              "width": "fill_container",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "W91vas",
+                  "name": "hpLatest",
+                  "width": "fill_container",
+                  "layout": "vertical",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "DpNoe",
+                      "name": "hpLatestHd",
+                      "width": "fill_container",
+                      "justifyContent": "space_between",
+                      "alignItems": "end",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZFCzM",
+                          "name": "hpLatestT",
+                          "fill": "$--foreground",
+                          "content": "Latest from the newsroom",
+                          "fontFamily": "$--font-primary",
+                          "fontSize": 28,
+                          "fontWeight": "700",
+                          "letterSpacing": -0.5
+                        },
+                        {
+                          "type": "text",
+                          "id": "XEs7D",
+                          "name": "hpLatestM",
+                          "fill": "$--muted-foreground",
+                          "content": "REFRESH ↻",
+                          "fontFamily": "$--font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "normal",
+                          "letterSpacing": 2
+                        }
+                      ]
+                    },
+                    {
+                      "id": "PMUqC",
+                      "type": "ref",
+                      "ref": "mkApx",
+                      "width": "fill_container",
+                      "name": "ll1",
+                      "descendants": {
+                        "A5lQEf/OaQju": {
+                          "fill": "$--cat-science"
+                        },
+                        "A5lQEf/GFGib": {
+                          "content": "SCIENCE"
+                        },
+                        "W04p0Y": {
+                          "content": "32 MIN AGO"
+                        },
+                        "l7l9p": {
+                          "content": "Quantum entanglement experiment closes the last major loophole, physicists say"
+                        },
+                        "YM6BC": {
+                          "content": "The result, replicated independently across three labs, ends a decades-long debate about the nature of locality."
+                        }
+                      }
+                    },
+                    {
+                      "id": "uIRpd",
+                      "type": "ref",
+                      "ref": "mkApx",
+                      "width": "fill_container",
+                      "name": "ll2",
+                      "descendants": {
+                        "A5lQEf/OaQju": {
+                          "fill": "$--cat-culture"
+                        },
+                        "A5lQEf/GFGib": {
+                          "content": "CULTURE"
+                        },
+                        "W04p0Y": {
+                          "content": "1 HR AGO"
+                        },
+                        "l7l9p": {
+                          "content": "The Met's spring season opens with a quiet reckoning over its collecting practices"
+                        },
+                        "YM6BC": {
+                          "content": "A long-anticipated retrospective re-examines four decades of acquisitions, restitution and the slow politics of museum reform."
+                        }
+                      }
+                    },
+                    {
+                      "id": "PDEuy",
+                      "type": "ref",
+                      "ref": "mkApx",
+                      "width": "fill_container",
+                      "name": "ll3",
+                      "descendants": {
+                        "A5lQEf/OaQju": {
+                          "fill": "$--cat-sports"
+                        },
+                        "A5lQEf/GFGib": {
+                          "content": "SPORTS"
+                        },
+                        "W04p0Y": {
+                          "content": "2 HRS AGO"
+                        },
+                        "l7l9p": {
+                          "content": "A 39-year-old captain is rewriting what late-career form looks like"
+                        },
+                        "YM6BC": {
+                          "content": "After a season most pundits called terminal, the underdog veteran has carried his side to within a point of the title."
+                        }
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "rdyAA",
+                  "name": "hpSide",
+                  "width": 380,
+                  "layout": "vertical",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "d2AH5",
+                      "name": "hpPopHd",
+                      "fill": "$--foreground",
+                      "content": "Most Read",
+                      "fontFamily": "$--font-primary",
+                      "fontSize": 24,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.3
+                    },
+                    {
+                      "type": "frame",
+                      "id": "nEO0F",
+                      "name": "hpPopList",
+                      "width": "fill_container",
+                      "stroke": {
+                        "align": "inside",
+                        "thickness": {
+                          "top": 1
+                        },
+                        "fill": "$--foreground"
+                      },
+                      "layout": "vertical",
+                      "children": [
+                        {
+                          "type": "frame",
+                          "id": "c8We9Z",
+                          "name": "pp1",
+                          "width": "fill_container",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": {
+                              "bottom": 1
+                            },
+                            "fill": "$--border"
+                          },
+                          "gap": 16,
+                          "padding": [
+                            16,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "QnfSA",
+                              "name": "pp1n",
+                              "fill": "$--accent",
+                              "content": "01",
+                              "fontFamily": "$--font-primary",
+                              "fontSize": 32,
+                              "fontWeight": "700",
+                              "letterSpacing": -1
+                            },
+                            {
+                              "type": "frame",
+                              "id": "N6bjMz",
+                              "name": "pp1c",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "k72Rx",
+                                  "name": "pp1cT",
+                                  "fill": "$--foreground",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "How a single late-night vote redrew the boundaries of public ownership",
+                                  "lineHeight": 1.3,
+                                  "fontFamily": "$--font-primary",
+                                  "fontSize": 16,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "ls1uA",
+                                  "name": "pp1cM",
+                                  "fill": "$--muted-foreground",
+                                  "content": "POLITICS · 4.2K READING NOW",
+                                  "fontFamily": "$--font-mono",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 1.2
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "eiVYE",
+                          "name": "pp2",
+                          "width": "fill_container",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": {
+                              "bottom": 1
+                            },
+                            "fill": "$--border"
+                          },
+                          "gap": 16,
+                          "padding": [
+                            16,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "wexq4",
+                              "name": "pp2n",
+                              "opacity": 0.3,
+                              "fill": "$--foreground",
+                              "content": "02",
+                              "fontFamily": "$--font-primary",
+                              "fontSize": 32,
+                              "fontWeight": "700",
+                              "letterSpacing": -1
+                            },
+                            {
+                              "type": "frame",
+                              "id": "A1hVGL",
+                              "name": "pp2c",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "a9V4VW",
+                                  "name": "pp2cT",
+                                  "fill": "$--foreground",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Open-source AI lab announces new training framework — and a board exodus",
+                                  "lineHeight": 1.3,
+                                  "fontFamily": "$--font-primary",
+                                  "fontSize": 16,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "WOF5I",
+                                  "name": "pp2cM",
+                                  "fill": "$--muted-foreground",
+                                  "content": "TECHNOLOGY · 3.1K READING NOW",
+                                  "fontFamily": "$--font-mono",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 1.2
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "LLil3",
+                          "name": "pp3",
+                          "width": "fill_container",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": {
+                              "bottom": 1
+                            },
+                            "fill": "$--border"
+                          },
+                          "gap": 16,
+                          "padding": [
+                            16,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "a5Jew",
+                              "name": "pp3n",
+                              "opacity": 0.3,
+                              "fill": "$--foreground",
+                              "content": "03",
+                              "fontFamily": "$--font-primary",
+                              "fontSize": 32,
+                              "fontWeight": "700",
+                              "letterSpacing": -1
+                            },
+                            {
+                              "type": "frame",
+                              "id": "ObLSn",
+                              "name": "pp3c",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "Ixazp",
+                                  "name": "pp3cT",
+                                  "fill": "$--foreground",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "Why the next decade of journalism will be defined by what we choose not to publish",
+                                  "lineHeight": 1.3,
+                                  "fontFamily": "$--font-primary",
+                                  "fontSize": 16,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "zkjQh",
+                                  "name": "pp3cM",
+                                  "fill": "$--muted-foreground",
+                                  "content": "OPINION · 2.4K READING NOW",
+                                  "fontFamily": "$--font-mono",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 1.2
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "frame",
+                          "id": "uZev4",
+                          "name": "pp4",
+                          "width": "fill_container",
+                          "gap": 16,
+                          "padding": [
+                            16,
+                            0
+                          ],
+                          "children": [
+                            {
+                              "type": "text",
+                              "id": "V1eGeC",
+                              "name": "pp4n",
+                              "opacity": 0.3,
+                              "fill": "$--foreground",
+                              "content": "04",
+                              "fontFamily": "$--font-primary",
+                              "fontSize": 32,
+                              "fontWeight": "700",
+                              "letterSpacing": -1
+                            },
+                            {
+                              "type": "frame",
+                              "id": "R9MX8F",
+                              "name": "pp4c",
+                              "width": "fill_container",
+                              "layout": "vertical",
+                              "gap": 6,
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "ygG0M",
+                                  "name": "pp4cT",
+                                  "fill": "$--foreground",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "A 39-year-old captain is rewriting what late-career form looks like",
+                                  "lineHeight": 1.3,
+                                  "fontFamily": "$--font-primary",
+                                  "fontSize": 16,
+                                  "fontWeight": "600"
+                                },
+                                {
+                                  "type": "text",
+                                  "id": "WxID0",
+                                  "name": "pp4cM",
+                                  "fill": "$--muted-foreground",
+                                  "content": "SPORTS · 1.9K READING NOW",
+                                  "fontFamily": "$--font-mono",
+                                  "fontSize": 10,
+                                  "fontWeight": "normal",
+                                  "letterSpacing": 1.2
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "o8FTA",
+                      "name": "hpNewsHd",
+                      "width": "fill_container",
+                      "fill": "$--inverse",
+                      "layout": "vertical",
+                      "gap": 16,
+                      "padding": 24,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FpE6Z",
+                          "name": "nh1",
+                          "fill": "$--accent",
+                          "content": "THE BRIEFING",
+                          "fontFamily": "$--font-mono",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 2
+                        },
+                        {
+                          "type": "text",
+                          "id": "GsCe7",
+                          "name": "nh2",
+                          "fill": "$--inverse-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "The day's most important story — in your inbox by 6 a.m.",
+                          "lineHeight": 1.25,
+                          "fontFamily": "$--font-primary",
+                          "fontSize": 22,
+                          "fontWeight": "600",
+                          "letterSpacing": -0.3
+                        },
+                        {
+                          "type": "text",
+                          "id": "Q3ifa",
+                          "name": "nh3",
+                          "opacity": 0.7,
+                          "fill": "$--inverse-foreground",
+                          "textGrowth": "fixed-width",
+                          "width": "fill_container",
+                          "content": "Curated by the Espectro newsroom. Free, no ads.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "$--font-secondary",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        },
+                        {
+                          "type": "frame",
+                          "id": "E1bJyM",
+                          "name": "nhInput",
+                          "width": "fill_container",
+                          "fill": "$--inverse",
+                          "cornerRadius": "$--radius-pill",
+                          "stroke": {
+                            "align": "inside",
+                            "thickness": 1.5,
+                            "fill": "$--inverse-foreground"
+                          },
+                          "alignItems": "center",
+                          "children": [
+                            {
+                              "type": "frame",
+                              "id": "Q6mkn",
+                              "name": "nhField",
+                              "width": "fill_container",
+                              "padding": [
+                                12,
+                                16
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "nmgwq",
+                                  "name": "nhFieldLbl",
+                                  "opacity": 0.6,
+                                  "fill": "$--inverse-foreground",
+                                  "textGrowth": "fixed-width",
+                                  "width": "fill_container",
+                                  "content": "your@email.com",
+                                  "fontFamily": "$--font-secondary",
+                                  "fontSize": 14,
+                                  "fontWeight": "normal"
+                                }
+                              ]
+                            },
+                            {
+                              "type": "frame",
+                              "id": "NGAh2",
+                              "name": "nhBtn",
+                              "fill": "$--inverse-foreground",
+                              "cornerRadius": "$--radius-pill",
+                              "padding": [
+                                10,
+                                16
+                              ],
+                              "alignItems": "center",
+                              "children": [
+                                {
+                                  "type": "text",
+                                  "id": "cWoZY",
+                                  "name": "nhBtnLbl",
+                                  "fill": "$--inverse",
+                                  "content": "Subscribe",
+                                  "fontFamily": "$--font-secondary",
+                                  "fontSize": 13,
+                                  "fontWeight": "600"
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "rectangle",
+              "id": "U5AXXI",
+              "name": "hpDiv3",
+              "fill": "$--foreground",
+              "width": "fill_container",
+              "height": 1
+            },
+            {
+              "type": "frame",
+              "id": "DRtpf",
+              "name": "hpOpHead",
+              "width": "fill_container",
+              "justifyContent": "space_between",
+              "alignItems": "end",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "jr0Xn",
+                  "name": "hpOpT",
+                  "fill": "$--foreground",
+                  "content": "Opinion & Analysis",
+                  "fontFamily": "$--font-primary",
+                  "fontSize": 32,
+                  "fontWeight": "700",
+                  "letterSpacing": -0.5
+                },
+                {
+                  "type": "text",
+                  "id": "rJIPV",
+                  "name": "hpOpM",
+                  "fill": "$--foreground",
+                  "content": "VIEW ALL OPINION →",
+                  "fontFamily": "$--font-mono",
+                  "fontSize": 11,
+                  "fontWeight": "600",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "on7fd",
+              "name": "hpOpRow",
+              "width": "fill_container",
+              "gap": 32,
+              "children": [
+                {
+                  "id": "LyXPb",
+                  "type": "ref",
+                  "ref": "fqSvB",
+                  "width": "fill_container",
+                  "name": "op1",
+                  "descendants": {
+                    "L8t5Pt/OaQju": {
+                      "fill": "$--cat-opinion"
+                    },
+                    "L8t5Pt/GFGib": {
+                      "content": "OPINION · COLUMN"
+                    },
+                    "M249F": {
+                      "content": "The case for slow journalism in an age that rewards speed"
+                    },
+                    "wrkUA": {
+                      "content": "BY MARGARET ELLIS · SENIOR EDITOR"
+                    }
+                  }
+                },
+                {
+                  "id": "NyUyu",
+                  "type": "ref",
+                  "ref": "fqSvB",
+                  "width": "fill_container",
+                  "name": "op2",
+                  "descendants": {
+                    "L8t5Pt/OaQju": {
+                      "fill": "$--cat-opinion"
+                    },
+                    "L8t5Pt/GFGib": {
+                      "content": "OPINION · ESSAY"
+                    },
+                    "M249F": {
+                      "content": "Why every newsroom decision is now an AI decision — whether we admit it or not"
+                    },
+                    "wrkUA": {
+                      "content": "BY EDITORIAL BOARD · 1 HR AGO"
+                    }
+                  }
+                },
+                {
+                  "id": "c2KGb",
+                  "type": "ref",
+                  "ref": "fqSvB",
+                  "width": "fill_container",
+                  "name": "op3",
+                  "descendants": {
+                    "L8t5Pt/OaQju": {
+                      "fill": "$--cat-opinion"
+                    },
+                    "L8t5Pt/GFGib": {
+                      "content": "OPINION · GUEST"
+                    },
+                    "M249F": {
+                      "content": "What the central bank's pivot means for households still anchored to old debt"
+                    },
+                    "wrkUA": {
+                      "content": "BY DR. K. NAKAMURA · ECONOMIST"
+                    }
+                  }
+                },
+                {
+                  "id": "HRmI9",
+                  "type": "ref",
+                  "ref": "fqSvB",
+                  "width": "fill_container",
+                  "name": "op4",
+                  "descendants": {
+                    "L8t5Pt/OaQju": {
+                      "fill": "$--cat-opinion"
+                    },
+                    "L8t5Pt/GFGib": {
+                      "content": "OPINION · LETTER"
+                    },
+                    "M249F": {
+                      "content": "Letters: readers respond to last week's investigation into freight transport corridors"
+                    },
+                    "wrkUA": {
+                      "content": "FROM OUR READERS · WEEKLY"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "RpT8w",
+          "type": "ref",
+          "ref": "LmlB1",
+          "width": "fill_container",
+          "name": "hpFooter"
+        }
+      ]
+    }
+  ],
+  "variables": {
+    "--accent": {
+      "type": "color",
+      "value": "#C8102E"
+    },
+    "--accent-foreground": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "--background": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "--border": {
+      "type": "color",
+      "value": "#E5E5E5"
+    },
+    "--border-strong": {
+      "type": "color",
+      "value": "#0A0A0A"
+    },
+    "--breaking": {
+      "type": "color",
+      "value": "#C8102E"
+    },
+    "--card": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "--card-muted": {
+      "type": "color",
+      "value": "#F5F5F4"
+    },
+    "--cat-business": {
+      "type": "color",
+      "value": "#1B5E20"
+    },
+    "--cat-culture": {
+      "type": "color",
+      "value": "#6A1B9A"
+    },
+    "--cat-opinion": {
+      "type": "color",
+      "value": "#5D4037"
+    },
+    "--cat-politics": {
+      "type": "color",
+      "value": "#C8102E"
+    },
+    "--cat-science": {
+      "type": "color",
+      "value": "#283593"
+    },
+    "--cat-sports": {
+      "type": "color",
+      "value": "#E65100"
+    },
+    "--cat-tech": {
+      "type": "color",
+      "value": "#1565C0"
+    },
+    "--cat-world": {
+      "type": "color",
+      "value": "#00695C"
+    },
+    "--font-mono": {
+      "type": "string",
+      "value": "IBM Plex Mono"
+    },
+    "--font-primary": {
+      "type": "string",
+      "value": "Playfair Display"
+    },
+    "--font-secondary": {
+      "type": "string",
+      "value": "Inter"
+    },
+    "--foreground": {
+      "type": "color",
+      "value": "#0A0A0A"
+    },
+    "--info": {
+      "type": "color",
+      "value": "#1B6EC2"
+    },
+    "--inverse": {
+      "type": "color",
+      "value": "#0A0A0A"
+    },
+    "--inverse-foreground": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "--live": {
+      "type": "color",
+      "value": "#E03A3A"
+    },
+    "--muted-foreground": {
+      "type": "color",
+      "value": "#6B6B6B"
+    },
+    "--primary": {
+      "type": "color",
+      "value": "#0A0A0A"
+    },
+    "--primary-foreground": {
+      "type": "color",
+      "value": "#FFFFFF"
+    },
+    "--radius-lg": {
+      "type": "number",
+      "value": 12
+    },
+    "--radius-md": {
+      "type": "number",
+      "value": 6
+    },
+    "--radius-none": {
+      "type": "number",
+      "value": 0
+    },
+    "--radius-pill": {
+      "type": "number",
+      "value": 9999
+    },
+    "--radius-sm": {
+      "type": "number",
+      "value": 2
+    },
+    "--space-1": {
+      "type": "number",
+      "value": 4
+    },
+    "--space-2": {
+      "type": "number",
+      "value": 8
+    },
+    "--space-3": {
+      "type": "number",
+      "value": 12
+    },
+    "--space-4": {
+      "type": "number",
+      "value": 16
+    },
+    "--space-5": {
+      "type": "number",
+      "value": 24
+    },
+    "--space-6": {
+      "type": "number",
+      "value": 32
+    },
+    "--space-7": {
+      "type": "number",
+      "value": 48
+    },
+    "--space-8": {
+      "type": "number",
+      "value": 64
+    },
+    "--subtle-foreground": {
+      "type": "color",
+      "value": "#A0A0A0"
+    },
+    "--success": {
+      "type": "color",
+      "value": "#2E7D32"
+    },
+    "--warning": {
+      "type": "color",
+      "value": "#C77700"
+    }
+  }
+}

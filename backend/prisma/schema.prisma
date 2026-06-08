@@ -1,0 +1,156 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum CandidateArticleStatus {
+  PENDING
+  FETCHED
+  REJECTED
+}
+
+enum ExtractionStatus {
+  PENDING
+  READY
+  FAILED
+}
+
+enum ClusterStatus {
+  PENDING
+  LINKED
+  REJECTED
+}
+
+enum AnalysisStatus {
+  PENDING
+  READY
+  FAILED
+}
+
+enum LinkDecision {
+  MATCH
+  NO_MATCH
+  NEEDS_REVIEW
+}
+
+model Publisher {
+  id                String             @id @default(cuid())
+  name              String
+  domain            String             @unique
+  biasLabel         String
+  biasScore         Float
+  candidateArticles CandidateArticle[]
+  articles          Article[]
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+
+  @@map("publishers")
+}
+
+model Story {
+  id                String             @id @default(cuid())
+  title             String
+  canonicalSummary  String?
+  seedKeywordsJson  Json
+  candidateArticles CandidateArticle[]
+  storyArticleLinks StoryArticleLink[]
+  aggregations      StoryAggregation[]
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+
+  @@map("stories")
+}
+
+model CandidateArticle {
+  id          String                 @id @default(cuid())
+  storyId     String
+  publisherId String
+  url         String                 @unique
+  status      CandidateArticleStatus @default(PENDING)
+  createdAt   DateTime               @default(now())
+  updatedAt   DateTime               @updatedAt
+  story       Story                  @relation(fields: [storyId], references: [id], onDelete: Cascade)
+  publisher   Publisher              @relation(fields: [publisherId], references: [id], onDelete: Cascade)
+
+  @@index([storyId])
+  @@index([publisherId])
+  @@map("candidate_articles")
+}
+
+model Article {
+  id                String             @id @default(cuid())
+  publisherId       String
+  url               String             @unique
+  title             String
+  extractionStatus  ExtractionStatus   @default(PENDING)
+  clusterStatus     ClusterStatus      @default(PENDING)
+  analysisStatus    AnalysisStatus     @default(PENDING)
+  createdAt         DateTime           @default(now())
+  updatedAt         DateTime           @updatedAt
+  publisher         Publisher          @relation(fields: [publisherId], references: [id], onDelete: Cascade)
+  rawContent        ArticleRawContent?
+  storyLinks        StoryArticleLink[]
+  analyses          ArticleAnalysis[]
+
+  @@index([publisherId])
+  @@map("articles")
+}
+
+model ArticleRawContent {
+  articleId      String   @id
+  rawHtml        String?
+  extractedText  String?
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+  article        Article  @relation(fields: [articleId], references: [id], onDelete: Cascade)
+
+  @@map("article_raw_contents")
+}
+
+model StoryArticleLink {
+  id         String       @id @default(cuid())
+  storyId    String
+  articleId  String
+  decision   LinkDecision
+  rationale  String?
+  createdAt  DateTime     @default(now())
+  updatedAt  DateTime     @updatedAt
+  story      Story        @relation(fields: [storyId], references: [id], onDelete: Cascade)
+  article    Article      @relation(fields: [articleId], references: [id], onDelete: Cascade)
+
+  @@unique([storyId, articleId])
+  @@index([storyId])
+  @@index([articleId])
+  @@map("story_article_links")
+}
+
+model ArticleAnalysis {
+  id                 String   @id @default(cuid())
+  articleId          String
+  coreFactsJson      Json
+  framingSignalsJson Json
+  tone               String
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+  article            Article   @relation(fields: [articleId], references: [id], onDelete: Cascade)
+
+  @@index([articleId])
+  @@map("article_analyses")
+}
+
+model StoryAggregation {
+  id               String   @id @default(cuid())
+  storyId          String
+  distributionJson Json
+  blindspotsJson   Json
+  createdAt        DateTime @default(now())
+  updatedAt        DateTime @updatedAt
+  story            Story    @relation(fields: [storyId], references: [id], onDelete: Cascade)
+
+  @@index([storyId])
+  @@map("story_aggregations")
+}
