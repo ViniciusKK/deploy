@@ -85,3 +85,4 @@ curl -X POST http://localhost:3000/articles/manual \
 - `story.discovery` e `candidate.fetch` estao stubados de proposito nesta fase.
 - O caminho mais rapido para o MVP e alimentar stories e artigos manualmente, validar a comparacao e depois automatizar discovery/fetch.
 - O modelo OpenAI usado fica em `OPENAI_MODEL`. O valor default esta em `.env.example`.
+
