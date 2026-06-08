@@ -48,7 +48,7 @@ export interface HomepageFeed {
   generatedAt: string;
 }
 
-const API_BASE = process.env.API_BASE ?? 'http://localhost:3000';
+const API_BASE = process.env.NEXT_PUBLIC_API_URL ?? 'http://localhost:3000';
 
 export async function getHomepageFeed(): Promise<HomepageFeed> {
   const res = await fetch(`${API_BASE}/feed/homepage`, { cache: 'no-store' });
