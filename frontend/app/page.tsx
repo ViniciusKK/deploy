@@ -41,20 +41,22 @@ export default async function HomePage({
       <Nav />
       <BreakingBanner message={breakingMessage} />
       <section className="mx-auto max-w-[1440px] px-10 pb-2 pt-10">
-        <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
-          {new Date(feed.generatedAt).toLocaleDateString('pt-BR', {
-            weekday: 'long',
-            day: '2-digit',
-            month: 'long',
-            year: 'numeric',
-          })}{' '}
-          · Edição da casa
-        </p>
+        <div className="flex items-center gap-2">
+          <p className="font-mono text-[11px] uppercase tracking-wider text-muted-foreground">
+            {new Date(feed.generatedAt).toLocaleDateString('pt-BR', {
+              weekday: 'long',
+              day: '2-digit',
+              month: 'long',
+              year: 'numeric',
+            })}{' '}
+            · Edição da casa
+          </p>
+          <DateNav availableDates={availableDates} selectedDate={selectedDate} />
+        </div>
         <h1 className="mt-2 font-display text-5xl font-bold leading-[1.05] tracking-tight">
           O que está sendo dito hoje
         </h1>
       </section>
-      <DateNav availableDates={availableDates} selectedDate={selectedDate} />
       {feed.hero ? <Hero story={feed.hero} /> : null}
       <div className="flex flex-col gap-16 py-12">
         <ComparisonSection stories={feed.comparison} />
