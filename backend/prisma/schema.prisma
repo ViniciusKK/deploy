@@ -37,6 +37,31 @@ enum LinkDecision {
   NEEDS_REVIEW
 }
 
+enum SubscriptionStatus {
+  NONE
+  ACTIVE
+  PAST_DUE
+  CANCELED
+}
+
+model User {
+  id                           String             @id @default(cuid())
+  clerkId                      String             @unique
+  email                        String
+  firstName                    String?
+  lastName                     String?
+  imageUrl                     String?
+  stripeCustomerId             String?            @unique
+  stripeSubscriptionId         String?
+  subscriptionStatus           SubscriptionStatus @default(NONE)
+  subscriptionCurrentPeriodEnd DateTime?
+  createdAt                    DateTime           @default(now())
+  updatedAt                    DateTime           @updatedAt
+
+  @@index([email])
+  @@map("users")
+}
+
 model Publisher {
   id                String             @id @default(cuid())
   name              String

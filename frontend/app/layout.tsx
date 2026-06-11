@@ -1,5 +1,8 @@
 import type { Metadata } from 'next';
 import { Inter, Playfair_Display, IBM_Plex_Mono } from 'next/font/google';
+import { ClerkProvider } from '@clerk/nextjs';
+import { ptBR } from '@clerk/localizations';
+import { UserSync } from '@/components/user-sync';
 import './globals.css';
 
 const sans = Inter({ subsets: ['latin'], variable: '--font-sans' });
@@ -13,8 +16,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="pt-BR" className={`${sans.variable} ${display.variable} ${mono.variable}`}>
-      <body>{children}</body>
-    </html>
+    <ClerkProvider localization={ptBR}>
+      <html lang="pt-BR" className={`${sans.variable} ${display.variable} ${mono.variable}`}>
+        <body>
+          <UserSync />
+          {children}
+        </body>
+      </html>
+    </ClerkProvider>
   );
 }

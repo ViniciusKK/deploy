@@ -12,6 +12,8 @@ import { AnalysisModule } from './analysis/analysis.module';
 import { AggregationModule } from './aggregation/aggregation.module';
 import { FeedModule } from './feed/feed.module';
 import { WorkerModule } from './worker/worker.module';
+import { UsersModule } from './users/users.module';
+import { BillingModule } from './billing/billing.module';
 
 @Module({
   imports: [
@@ -39,6 +41,8 @@ import { WorkerModule } from './worker/worker.module';
     AggregationModule,
     FeedModule,
     WorkerModule,
+    UsersModule,
+    BillingModule,
   ],
 })
 export class AppModule {}

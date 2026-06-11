@@ -7,3 +7,6 @@ build
 .env.local
 .env*.local
 next-env.d.ts.bak
+
+# clerk configuration (can include secrets)
+/.clerk/

@@ -15,6 +15,7 @@
     "prisma:push": "prisma db push"
   },
   "dependencies": {
+    "@clerk/backend": "^3.6.1",
     "@nestjs/bullmq": "^11.0.4",
     "@nestjs/common": "^11.0.1",
     "@nestjs/config": "^4.0.2",
@@ -27,12 +28,14 @@
     "openai": "^4.104.0",
     "prisma": "^6.6.0",
     "reflect-metadata": "^0.2.2",
-    "rxjs": "^7.8.1"
+    "rxjs": "^7.8.1",
+    "stripe": "^18.5.0"
   },
   "devDependencies": {
     "@nestjs/cli": "^11.0.5",
     "@nestjs/schematics": "^11.0.2",
     "@nestjs/testing": "^11.0.1",
+    "@types/express": "^5.0.6",
     "@types/node": "^22.15.3",
     "eslint": "^9.25.1",
     "eslint-config-prettier": "^10.1.2",

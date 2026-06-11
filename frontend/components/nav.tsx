@@ -1,8 +1,15 @@
-import { Menu, Search, User } from 'lucide-react';
+'use client';
+
+import { useState } from 'react';
+import { Menu, Search } from 'lucide-react';
+import { Show, SignInButton, UserButton } from '@clerk/nextjs';
+import { Paywall } from '@/components/paywall';
 
 const SECTIONS = ['Política', 'Economia', 'Mundo', 'Clima', 'Tecnologia', 'Cultura'];
 
 export function Nav() {
+  const [paywallOpen, setPaywallOpen] = useState(false);
+
   return (
     <header className="border-b border-foreground bg-background">
       <div className="mx-auto flex max-w-[1440px] items-center justify-between px-10 py-4">
@@ -26,10 +33,22 @@ export function Nav() {
             <Search size={16} />
             <span>Buscar histórias e fontes</span>
           </div>
-          <button className="grid h-10 w-10 place-items-center rounded-pill bg-card-muted">
-            <User size={18} />
-          </button>
-          <button className="flex items-center gap-2 rounded-pill bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground">
+          <Show when="signed-out">
+            <SignInButton mode="modal">
+              <button className="rounded-pill bg-card-muted px-5 py-2.5 text-sm font-medium hover:bg-border">
+                Entrar
+              </button>
+            </SignInButton>
+          </Show>
+          <Show when="signed-in">
+            <UserButton
+              appearance={{ elements: { avatarBox: 'h-10 w-10' } }}
+            />
+          </Show>
+          <button
+            onClick={() => setPaywallOpen(true)}
+            className="flex items-center gap-2 rounded-pill bg-primary px-5 py-2.5 text-sm font-medium text-primary-foreground"
+          >
             Assinar
           </button>
           <button className="grid h-10 w-10 place-items-center rounded-pill bg-card-muted md:hidden">
@@ -37,6 +56,7 @@ export function Nav() {
           </button>
         </div>
       </div>
+      <Paywall open={paywallOpen} onClose={() => setPaywallOpen(false)} />
     </header>
   );
 }

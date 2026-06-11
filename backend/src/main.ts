@@ -4,7 +4,10 @@ import { AppModule } from './app.module';
 import { AllExceptionsFilter } from './common/all-exceptions.filter';
 
 async function bootstrap(): Promise<void> {
-  const app = await NestFactory.create(AppModule, { logger: ['error', 'warn', 'log', 'debug'] });
+  const app = await NestFactory.create(AppModule, {
+    logger: ['error', 'warn', 'log', 'debug'],
+    rawBody: true,
+  });
   app.enableCors({ origin: true, credentials: true });
   app.enableShutdownHooks();
   app.useGlobalPipes(
